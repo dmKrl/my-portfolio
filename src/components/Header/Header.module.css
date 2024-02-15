@@ -1,0 +1,50 @@
+.header {
+    padding: 20px 150px;
+}
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerLogo {
+    z-index: 2;
+}
+.headerRight {
+    display: flex;
+    gap: 89px;
+}
+.headerNavBar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.headerNavBar a {
+    color: var(--Text-80);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.headerOptions {
+    display: flex;
+    gap: 15px;
+}
+.changeBackColor {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    gap: 8px;
+    padding: 2px 4px;
+    background: var(--Main-Button-Background);
+    border-radius: 20px;
+    border: 1px solid var(--Main-100);
+}
+.changeButtonLight {
+    background: var(--Main-Button-Background-Light);
+    border-radius: 20px;
+}
+.changeButtonDark {
+    background: var(--Main-Button-Background-Dark);
+    border-radius: 20px;
+}

@@ -1,0 +1,14 @@
+.info {
+    height: 1115px;
+}
+.infoContainer {
+    padding: 110px 150px 0px;
+}
+.infoDark {
+    background: #161616;
+    background-image: url('/src/assets/image/bg-info-dark.png');
+}
+.infoLight {
+    background: #eeeeee;
+    background-image: url('/src/assets/image/bg-info-light.png');
+}

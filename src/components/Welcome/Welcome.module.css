@@ -1,0 +1,46 @@
+.welcome {
+    padding: 0px 150px;
+}
+.mainBackImg {
+    position: absolute;
+    bottom: 0px;
+    width: 585.761px;
+    height: 590.909px;
+    transform: rotate(-1.973deg);
+}
+.welcomeBox {
+    position: relative;
+}
+.welcomeUp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+.welcomeDown {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.welcomeHeading {
+    color: var(--Text-100);
+    text-align: center;
+    font-family: Magilio;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: capitalize;
+    text-align: end;
+}
+.welcomeDownText {
+    width: 508px;
+    color: var(--Text-80);
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+.welcomeDownText span {
+    color: var(--Accent-Blue-light);
+}

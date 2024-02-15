@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* dark theme */
+
+html[data-theme='dark'] {
+    --Text-100: #fff;
+    --Text-80: rgba(255, 255, 255, 0.8);
+    --Text-50: rgba(255, 255, 255, 0.5);
+    --Accent-Blue-light: #367bff;
+    --Accent-Linear-stroke: #0057ff;
+    --Main-100: #ffffff;
+    --Main-Button-Background: #00000000;
+    --Main-Button-Background-Dark: #ffffff;
+    --background-color-preview: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.33) 0%,
+            rgba(0, 0, 0, 0.33) 100%
+        ),
+        radial-gradient(
+            47.88% 36.86% at 21.19% 33.73%,
+            rgba(20, 20, 20, 0) 0%,
+            rgba(20, 20, 20, 0) 28.21%,
+            rgba(20, 20, 20, 0.61) 55.82%,
+            #141414 100%
+        );
+    --Main-Bg: #000000;
+    --Main-Cards: rgba(217, 229, 252, 0);
+}
+/* light theme */
+
+html[data-theme='light'] {
+    --Text-100: #0f0f0f;
+    --Text-80: rgba(15, 15, 15, 0.8);
+    --Text-50: rgba(0, 0, 0, 0.5);
+    --Accent-Blue-light: #0057ff;
+    --Accent-Linear-stroke: #0057ff;
+    --Main-100: #0f0f0f;
+    --Main-Button-Background: #ffffff00;
+    --Main-Button-Background-Light: #000000;
+    --background-color-preview: radial-gradient(
+        47.88% 36.86% at 21.19% 33.73%,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 28.21%,
+        rgba(255, 255, 255, 0.61) 55.82%,
+        #fff 100%
+    );
+    --Main-Bg: #e7e7e7;
+    --Main-Cards: #d9e5fc;
+}
