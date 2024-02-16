@@ -1,6 +1,19 @@
 .header {
     padding: 20px 150px;
+    transition: all 0.5s ease;
 }
+.headerNone {
+    background: #00000000;
+}
+.headerDark {
+    background: #161616;
+    background-image: url('/src/assets/image/bg-info-dark.png');
+}
+.headerLight {
+    background: #eeeeee;
+    background-image: url('/src/assets/image/bg-info-light.png');
+}
+
 .headerWrapper {
     display: flex;
     justify-content: space-between;

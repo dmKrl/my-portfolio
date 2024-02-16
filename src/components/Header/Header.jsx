@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import s from './Header.module.css';
 import { useTheme } from '../../hooks/use-theme';
 const Header = () => {
+    const location = useLocation();
     const { theme, setTheme } = useTheme();
     const handleLightThemeClick = () => {
         setTheme('light');
@@ -10,7 +11,16 @@ const Header = () => {
         setTheme('dark');
     };
     return (
-        <header className={s.header} name="header">
+        <header
+            className={`${s.header} ${
+                location.pathname === '/'
+                    ? s.headerNone
+                    : theme === 'dark'
+                    ? s.headerDark
+                    : s.headerLight
+            }`}
+            name="header"
+        >
             <div className={s.headerWrapper}>
                 <div className={s.headerLogo}>
                     <Link to="/">
