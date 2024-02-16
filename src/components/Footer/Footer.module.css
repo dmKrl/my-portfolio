@@ -50,9 +50,13 @@
 }
 .footerDownCenterMessage {
     display: flex;
+    align-items: center;
     gap: 22px;
 }
 .footerAnchor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .footerCreatedBy {
     display: flex;

@@ -1,34 +1,78 @@
 import { Link } from 'react-router-dom';
 import s from '../Footer/Footer.module.css';
+import { useSelector } from 'react-redux';
+import { selectThemeStore } from '../../redux/themeSlice/themeSlice';
 
 const FooterMessager = () => {
+    const { theme } = useSelector(selectThemeStore);
+
     return (
         <>
             <div className={s.footerDownCenterMessage}>
                 <Link>
-                    <svg style={{ width: '32px', height: '32px' }}>
-                        <use xlinkHref="/src/assets/image/icon/sprite.svg#mail" />
-                    </svg>
+                    {theme === 'dark' ? (
+                        <img
+                            src="/src/assets/image/icon/mail.svg"
+                            style={{ width: '32px', height: '32px' }}
+                        />
+                    ) : (
+                        <img
+                            src="/src/assets/image/icon/mail-light.svg"
+                            style={{ width: '32px', height: '32px' }}
+                        />
+                    )}
                 </Link>
                 <Link>
-                    <svg style={{ width: '32px', height: '32px' }}>
-                        <use xlinkHref="/src/assets/image/icon/sprite.svg#tg" />
-                    </svg>
+                    {theme === 'dark' ? (
+                        <img
+                            src="/src/assets/image/icon/tg.svg"
+                            style={{ width: '32px', height: '32px' }}
+                        />
+                    ) : (
+                        <img
+                            src="/src/assets/image/icon/tg-light.svg"
+                            style={{ width: '32px', height: '32px' }}
+                        />
+                    )}
                 </Link>
                 <Link>
-                    <svg style={{ width: '28px', height: '28px' }}>
-                        <use xlinkHref="/src/assets/image/icon/sprite.svg#whatsapp" />
-                    </svg>
+                    {theme === 'dark' ? (
+                        <img
+                            src="/src/assets/image/icon/whatsapp.svg"
+                            style={{ width: '24px', height: '24px' }}
+                        />
+                    ) : (
+                        <img
+                            src="/src/assets/image/icon/whatsapp-light.svg"
+                            style={{ width: '24px', height: '24px' }}
+                        />
+                    )}
                 </Link>
                 <Link>
-                    <svg style={{ width: '32px', height: '32px' }}>
-                        <use xlinkHref="/src/assets/image/icon/sprite.svg#git" />
-                    </svg>
+                    {theme === 'dark' ? (
+                        <img
+                            src="/src/assets/image/icon/git.svg"
+                            style={{ width: '32px', height: '32px' }}
+                        />
+                    ) : (
+                        <img
+                            src="/src/assets/image/icon/git-light.svg"
+                            style={{ width: '32px', height: '32px' }}
+                        />
+                    )}
                 </Link>
                 <Link>
-                    <svg style={{ width: '32px', height: '32px' }}>
-                        <use xlinkHref="/src/assets/image/icon/sprite.svg#linkedin" />
-                    </svg>
+                    {theme === 'dark' ? (
+                        <img
+                            src="/src/assets/image/icon/linkedin.svg"
+                            style={{ width: '32px', height: '32px' }}
+                        />
+                    ) : (
+                        <img
+                            src="/src/assets/image/icon/linkedin-light.svg"
+                            style={{ width: '32px', height: '32px' }}
+                        />
+                    )}
                 </Link>
             </div>
         </>

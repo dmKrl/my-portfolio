@@ -1,8 +1,13 @@
 import MarqueeContact from '../Marquee/MarqueeContact';
 import { Link } from 'react-router-dom';
 import s from './Footer.module.css';
+import FooterMessager from './../FooterMessagers/FooterMessager';
+import { selectThemeStore } from '../../redux/themeSlice/themeSlice';
+import { useSelector } from 'react-redux';
 
 const Footer = () => {
+    const { theme } = useSelector(selectThemeStore);
+
     return (
         <div className={s.footer}>
             <MarqueeContact />
@@ -19,41 +24,20 @@ const Footer = () => {
                             Contact me in any way convenient for you and I will
                             answer you today
                         </p>
-                        <div className={s.footerDownCenterMessage}>
-                            <Link>
-                                <svg style={{ width: '32px', height: '32px' }}>
-                                    <use xlinkHref="/src/assets/image/icon/sprite.svg#mail" />
-                                </svg>
-                            </Link>
-                            <Link>
-                                <svg style={{ width: '32px', height: '32px' }}>
-                                    <use xlinkHref="/src/assets/image/icon/sprite.svg#tg" />
-                                </svg>
-                            </Link>
-                            <Link>
-                                <svg style={{ width: '28px', height: '28px' }}>
-                                    <use xlinkHref="/src/assets/image/icon/sprite.svg#whatsapp" />
-                                </svg>
-                            </Link>
-                            <Link>
-                                <svg style={{ width: '32px', height: '32px' }}>
-                                    <use xlinkHref="/src/assets/image/icon/sprite.svg#git" />
-                                </svg>
-                            </Link>
-                            <Link>
-                                <svg style={{ width: '32px', height: '32px' }}>
-                                    <use xlinkHref="/src/assets/image/icon/sprite.svg#linkedin" />
-                                </svg>
-                            </Link>
-                        </div>
+                        <FooterMessager />
                     </div>
                 </div>
                 <div className={s.footerAnchor}>
                     {' '}
                     <Link>
-                        <svg style={{ width: '48px', height: '48px' }}>
-                            <use xlinkHref="/src/assets/image/icon/sprite.svg#scroll-black-up" />
-                        </svg>
+                        <img
+                            src={`${
+                                theme === 'dark'
+                                    ? '/src/assets/image/icon/scroll-black-up.svg'
+                                    : '/src/assets/image/icon/scroll-light-up.svg'
+                            }`}
+                            alt=""
+                        />
                     </Link>
                 </div>
             </div>
