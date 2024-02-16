@@ -9,7 +9,9 @@ const ProjectCardItem = () => {
             </div>
             <div className={s.projectCardsBottomBox}>
                 <h3 className={s.projectCardsBottomHeading}>Name of project</h3>
-                <Link className={s.projectCardsLink}>View More 🠒</Link>
+                <Link className={s.projectCardsLink} to={`/project/:id}`}>
+                    View More 🠒
+                </Link>
             </div>
         </div>
     );
