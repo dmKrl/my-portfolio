@@ -4,6 +4,8 @@
 }
 .tickerContact {
     background: var(#ffffff00);
+    height: 70px;
+    overflow: hidden;
     padding-top: 16px;
     border-top: 1px solid var(--Main-100);
 }
@@ -20,7 +22,7 @@
 .tickerContact span {
     color: var(--Text-100);
     font-family: 'Satoshi';
-    font-size: 48px;
+    font-size: 36px;
     font-style: italic;
     font-weight: 500;
     line-height: 120%;

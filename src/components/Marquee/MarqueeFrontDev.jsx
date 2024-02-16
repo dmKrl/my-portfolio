@@ -10,6 +10,7 @@ export default function MarqueeFrontDev() {
                 padding: '16px 0px',
                 whiteSpace: 'nowrap',
                 color: 'white',
+                scrollWhen: 'overflow',
                 speed: 0,
             }}
         >

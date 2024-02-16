@@ -27,8 +27,8 @@ const ProjectItem = () => {
                         </div>
                     </div>
                     <div className={s.projectNav}>
-                        <Link>View the code 🠒</Link>
-                        <Link>View the project 🠒</Link>
+                        <Link to="/project">View the code 🠒</Link>
+                        <Link to="/project">View the project 🠒</Link>
                     </div>
                 </div>
                 <div className={s.descriptionRight}>

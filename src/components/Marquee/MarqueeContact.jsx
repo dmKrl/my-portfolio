@@ -10,14 +10,15 @@ export default function MarqueeContact() {
                 padding: '16px 0px',
                 whiteSpace: 'nowrap',
                 color: 'white',
+                scrollWhen: 'overflow',
                 speed: 0,
             }}
         >
             <Marquee>
-                CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT
-                * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT
-                * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT
-                * CONTACT * CONTACT * CONTACT * CONTACT *
+                CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT *
+                CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT *
+                CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT *
+                CONTACT * CONTACT * CONTACT * CONTACT *
             </Marquee>
         </div>
     );
