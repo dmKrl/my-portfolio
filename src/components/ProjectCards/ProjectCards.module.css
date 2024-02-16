@@ -1,0 +1,73 @@
+.projectCards {
+    display: flex;
+    flex-direction: column;
+}
+.projectCardsUp {
+    margin-top: 115px;
+    margin-bottom: 20px;
+}
+.projectCardsHeading {
+    color: var(--Text-100);
+    font-family: Magilio;
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+.projectCardsItems {
+    display: flex;
+    gap: 20px;
+}
+.projectCardsItem {
+    display: flex;
+    flex-direction: column;
+    width: 508px;
+    height: 438px;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: var(--Main-Blue-Cards);
+    transition: all 0.2s ease;
+    border: 1px solid var(--Main-50);
+    box-shadow: 1px 4px 20px 0px rgba(0, 0, 0, 0.1),
+        -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.projectCardsItem:hover {
+    display: flex;
+    flex-direction: column;
+    width: 508px;
+    height: 438px;
+    transform: scale(1.01);
+    box-shadow: 1px 4px 20px 0px rgba(0, 0, 0, 0.4),
+        -1px 4px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.projectCardsImgBox {
+    height: 330px;
+}
+.projectCardsImgBox img:hover  {
+}
+.projectCardsBottomBox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.projectCardsBottomHeading {
+    color: var(--Text-100);
+    font-family: Satoshi;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.projectCardsBottomBox a {
+    overflow: hidden;
+    color: var(--Text-100);
+    text-overflow: ellipsis;
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}

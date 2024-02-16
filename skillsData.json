@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "name": "HTML"
+    },
+    {
+        "id": "2",
+        "name": "CSS"
+    },
+    {
+        "id": "3",
+        "name": "SCSS"
+    },
+    {
+        "id": "4",
+        "name": "SASS"
+    },
+    {
+        "id": "5",
+        "name": "JavaScript"
+    },
+    {
+        "id": "6",
+        "name": "TypeScript"
+    },
+    {
+        "id": "7",
+        "name": "Git"
+    },
+    {
+        "id": "8",
+        "name": "React"
+    },
+    {
+        "id": "9",
+        "name": "Redux"
+    },
+    {
+        "id": "10",
+        "name": "RTK Query"
+    },
+    {
+        "id": "11",
+        "name": "Vite"
+    },
+    {
+        "id": "12",
+        "name": "Nodejs"
+    },
+    {
+        "id": "13",
+        "name": "Docker"
+    }
+]

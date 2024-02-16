@@ -20,6 +20,8 @@ html[data-theme='dark'] {
     --Accent-Blue-light: #367bff;
     --Accent-Linear-stroke: #0057ff;
     --Main-100: #ffffff;
+    --Main-50: rgba(255, 255, 255, 0.5);
+    --Main-Blue-Cards: #d9e5fc00;
     --Main-Button-Background: #00000000;
     --Main-Button-Background-Dark: #ffffff;
     --background-color-preview: linear-gradient(
@@ -46,6 +48,8 @@ html[data-theme='light'] {
     --Accent-Blue-light: #0057ff;
     --Accent-Linear-stroke: #0057ff;
     --Main-100: #0f0f0f;
+    --Main-50: rgba(255, 255, 255, 0);
+    --Main-Blue-Cards: #d9e5fc;
     --Main-Button-Background: #ffffff00;
     --Main-Button-Background-Light: #000000;
     --background-color-preview: radial-gradient(

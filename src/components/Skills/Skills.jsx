@@ -1,4 +1,6 @@
+import SkillsItem from '../UI/SkillsItem/SkillsItem';
 import s from './Skills.module.css';
+import skillsData from '../../../skillsData.json';
 
 const Skills = () => {
     return (
@@ -13,16 +15,11 @@ const Skills = () => {
             </div>
             <div className={s.skillsBox}>
                 <div className={s.skillsItems}>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
-                    <div className={s.skillsItem}>HTML</div>
+                    {skillsData.map((skill) => {
+                        return (
+                            <SkillsItem key={skill.id}>{skill.name}</SkillsItem>
+                        );
+                    })}
                 </div>
             </div>
         </div>
