@@ -7,7 +7,7 @@ const ProjectItem = () => {
         <div className={s.projectWrapper}>
             <div className={s.projectContainer}>
                 <div className={s.projectLeft}>
-                    <div>
+                    <div className={s.projectLeftUp}>
                         <p className={s.projectDescription}>Furniture store</p>
                         <h1 className={s.projectNameProject}>
                             Name of project

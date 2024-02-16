@@ -43,8 +43,20 @@
 .changeButtonLight {
     background: var(--Main-Button-Background-Light);
     border-radius: 20px;
+    transition: all 1s ease;
+    height: 20px;
+}
+.changeButtonLight:active {
+    background: var(--Main-Button-Background-Light);
+    border-radius: 20px;
 }
 .changeButtonDark {
+    background: var(--Main-Button-Background-Dark);
+    transition: all 1s ease;
+    border-radius: 20px;
+    height: 20px;
+}
+.changeButtonDark:active {
     background: var(--Main-Button-Background-Dark);
     border-radius: 20px;
 }

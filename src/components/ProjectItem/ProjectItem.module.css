@@ -58,6 +58,7 @@
 .projectNav {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 .projectNav a {
     overflow: hidden;
@@ -68,4 +69,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
+}
+.descriptionRight img {
+    height: 450px;
 }
