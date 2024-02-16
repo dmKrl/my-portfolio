@@ -1,6 +1,7 @@
 .projectCards {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 .projectCardsUp {
     margin-top: 115px;
@@ -43,7 +44,7 @@
 .projectCardsImgBox {
     height: 330px;
 }
-.projectCardsImgBox img:hover  {
+.projectCardsImgBox img:hover {
 }
 .projectCardsBottomBox {
     display: flex;

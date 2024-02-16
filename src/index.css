@@ -21,6 +21,7 @@ html[data-theme='dark'] {
     --Accent-Linear-stroke: #0057ff;
     --Main-100: #ffffff;
     --Main-50: rgba(255, 255, 255, 0.5);
+    --Main-20: rgba(255, 255, 255, 0.2);
     --Main-Blue-Cards: #d9e5fc00;
     --Main-Button-Background: #00000000;
     --Main-Button-Background-Dark: #ffffff;
@@ -49,6 +50,7 @@ html[data-theme='light'] {
     --Accent-Linear-stroke: #0057ff;
     --Main-100: #0f0f0f;
     --Main-50: rgba(255, 255, 255, 0);
+    --Main-20: rgba(0, 0, 0, 0.2);
     --Main-Blue-Cards: #d9e5fc;
     --Main-Button-Background: #ffffff00;
     --Main-Button-Background-Light: #000000;
