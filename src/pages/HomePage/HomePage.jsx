@@ -6,7 +6,7 @@ const HomePage = () => {
         <>
             <Welcome />
             <MarqueeFrontDev />
-            <Info />;
+            <Info />
         </>
     );
 };

@@ -9,7 +9,7 @@
 }
 .tickerFront span {
     color: white;
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 12px;
     font-style: italic;
     font-weight: 700;
@@ -19,7 +19,7 @@
 }
 .tickerContact span {
     color: var(--Text-100);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 48px;
     font-style: italic;
     font-weight: 500;

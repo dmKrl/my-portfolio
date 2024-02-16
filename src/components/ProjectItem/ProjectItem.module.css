@@ -12,7 +12,7 @@
 }
 .projectDescription {
     color: var(--Text-50);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -21,7 +21,7 @@
 }
 .projectNameProject {
     color: var(--Text-100);
-    font-family: Magilio;
+    font-family: 'Magilio';
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
@@ -30,7 +30,7 @@
 }
 .projectText {
     color: var(--Text-80);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -44,7 +44,7 @@
 }
 .projectHeadingTechnologies {
     color: var(--Text-100);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -63,7 +63,7 @@
     overflow: hidden;
     color: var(--Text-100);
     text-overflow: ellipsis;
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 20px;
     font-style: normal;
     font-weight: 500;

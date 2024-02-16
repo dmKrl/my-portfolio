@@ -9,7 +9,7 @@
 }
 .skillsHeading {
     color: var(--Text-100);
-    font-family: Magilio;
+    font-family: 'Magilio';
     font-size: 120px;
     font-style: normal;
     font-weight: 400;
@@ -18,7 +18,7 @@
 }
 .skillsText {
     color: var(--Text-80);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -44,7 +44,7 @@
     border-radius: 20px;
     border: 1px solid var(--Accent-Linear-stroke);
     color: var(--Text-100);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

@@ -20,7 +20,7 @@
 }
 .footerDownLeftText {
     color: var(--Text-100);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -28,7 +28,7 @@
 }
 .footerDownLeftHeading {
     color: var(--Text-100);
-    font-family: Magilio;
+    font-family: 'Magilio';
     font-size: 110px;
     font-style: normal;
     font-weight: 400;
@@ -42,7 +42,7 @@
 .footerDownCenterText {
     width: 508px;
     color: var(--Text-80);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -66,7 +66,7 @@
 }
 .footerCreatedBy span {
     color: var(--Text-50);
-    font-family: Satoshi;
+    font-family: 'Satoshi';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

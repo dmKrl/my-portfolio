@@ -27,7 +27,7 @@ const Header = () => {
                     <nav className={s.headerNavBar}>
                         <Link to="/">Home</Link>
                         <Link to="/">Tools</Link>
-                        <Link to="/">Project</Link>
+                        <Link to="/project">Project</Link>
                         <Link to="/">Contact</Link>
                     </nav>
                     <div className={s.headerOptions}>
