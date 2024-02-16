@@ -1,15 +1,15 @@
 import MarqueeContact from '../Marquee/MarqueeContact';
-import { Link } from 'react-router-dom';
 import s from './Footer.module.css';
 import FooterMessager from './../FooterMessagers/FooterMessager';
 import { selectThemeStore } from '../../redux/themeSlice/themeSlice';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
     const { theme } = useSelector(selectThemeStore);
 
     return (
-        <div className={s.footer}>
+        <div className={s.footer} name="footer">
             <MarqueeContact />
             <div className={s.footerContainer}>
                 <div className={s.footerDown}>
@@ -28,8 +28,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={s.footerAnchor}>
-                    {' '}
-                    <Link>
+                    <Link
+                        className={s.anchor}
+                        to="header"
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                    >
                         <img
                             src={`${
                                 theme === 'dark'

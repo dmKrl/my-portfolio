@@ -10,7 +10,7 @@ const Header = () => {
         setTheme('dark');
     };
     return (
-        <header className={s.header}>
+        <header className={s.header} name="header">
             <div className={s.headerWrapper}>
                 <div className={s.headerLogo}>
                     <Link to="/">

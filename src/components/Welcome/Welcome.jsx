@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import s from './Welcome.module.css';
 import { selectThemeStore } from '../../redux/themeSlice/themeSlice';
+import { Link } from 'react-scroll';
 /* eslint-disable react/no-unescaped-entities */
 const Welcome = () => {
     const { theme } = useSelector(selectThemeStore);
@@ -30,7 +31,14 @@ const Welcome = () => {
                     and creating. I am passionate about new technologies and am
                     constantly expanding my experience with them.
                 </p>
-                <button className={s.anchor}>
+                <Link
+                    className={s.anchor}
+                    to="footer"
+                    spy={true}
+                    smooth={true}
+                    offset={50}
+                    duration={500}
+                >
                     {theme === 'dark' ? (
                         <svg style={{ width: '48px', height: '48px' }}>
                             <use xlinkHref="/src/assets/image/icon/sprite.svg#scroll-black" />
@@ -40,7 +48,7 @@ const Welcome = () => {
                             <use xlinkHref="/src/assets/image/icon/sprite.svg#scroll-white" />
                         </svg>
                     )}
-                </button>
+                </Link>
             </div>
         </div>
     );
