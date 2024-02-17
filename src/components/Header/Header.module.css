@@ -47,16 +47,28 @@
     align-items: center;
     height: 24px;
     gap: 8px;
-    padding: 2px 4px;
     background: var(--Main-Button-Background);
     border-radius: 20px;
     border: 1px solid var(--Main-100);
 }
+.changeBackColor input[name='mode'] {
+    display: none;
+}
+.changeBackColor input[name='mode'] + label {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #555;
+}
+.changeBackColor input[name='mode']:checked + label {
+    transform: rotateX('left');
+    background: green;
+}
 .changeButtonLight {
     background: var(--Main-Button-Background-Light);
     border-radius: 20px;
-    transition: all 1s ease;
-    height: 20px;
+    transition: all 0.5s ease;
+    width: 28px;
+    height: 24px;
 }
 .changeButtonLight:active {
     background: var(--Main-Button-Background-Light);
@@ -64,9 +76,10 @@
 }
 .changeButtonDark {
     background: var(--Main-Button-Background-Dark);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     border-radius: 20px;
-    height: 20px;
+    width: 28px;
+    height: 24px;
 }
 .changeButtonDark:active {
     background: var(--Main-Button-Background-Dark);

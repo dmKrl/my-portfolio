@@ -41,13 +41,44 @@ const Header = () => {
                         <Link to="/">Contact</Link>
                     </nav>
                     <div className={s.headerOptions}>
-                        <select>
+                        {/* В дальнейшем добавится смена языка в приложении */}
+                        {/* <select>
                             <option>En</option>
                             <option value="En">En</option>
                             <option value="Ru">Ru</option>
-                        </select>
+                        </select> */}
                         <div>
                             <div className={s.changeBackColor}>
+                                {/* <input type="radio" id="light" name="mode" />
+                                <label htmlFor="light">
+                                    <svg
+                                        style={{
+                                            width: '20px',
+                                            height: '20px',
+                                        }}
+                                    >
+                                        {theme === 'dark' ? (
+                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#sun-white" />
+                                        ) : (
+                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#sun-white" />
+                                        )}
+                                    </svg>
+                                </label>
+                                <input type="radio" id="dark" name="mode" />
+                                <label htmlFor="dark">
+                                    <svg
+                                        style={{
+                                            width: '20px',
+                                            height: '20px',
+                                        }}
+                                    >
+                                        {theme === 'dark' ? (
+                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#moon-black" />
+                                        ) : (
+                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#moon-black" />
+                                        )}
+                                    </svg>
+                                </label> */}
                                 <button
                                     className={s.changeButtonLight}
                                     onClick={handleLightThemeClick}
