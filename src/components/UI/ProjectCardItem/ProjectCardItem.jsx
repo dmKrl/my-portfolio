@@ -6,7 +6,7 @@ const ProjectCardItem = ({ projectInfo }) => {
     return (
         <div className={s.projectCardsItem}>
             <div className={s.projectCardsImgBox}>
-                <img src="/src/assets/image/image-project-item.png" alt="" />
+                <img src={projectInfo.image} alt="" />
             </div>
             <div className={s.projectCardsBottomBox}>
                 <h3 className={s.projectCardsBottomHeading}>
