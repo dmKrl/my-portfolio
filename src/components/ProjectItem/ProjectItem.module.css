@@ -53,7 +53,8 @@
 }
 .projectSkills {
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .projectNav {
     display: flex;

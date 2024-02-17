@@ -50,3 +50,6 @@
     font-weight: 400;
     line-height: 120%;
 }
+.skillsItem span {
+    white-space: nowrap;
+}

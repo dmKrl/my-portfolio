@@ -5,7 +5,9 @@ const SkillsItem = (props) => {
     const { children } = props;
     return (
         <>
-            <div className={s.skillsItem}>{children}</div>
+            <div className={s.skillsItem}>
+                <span>{children}</span>
+            </div>
         </>
     );
 };
