@@ -4,14 +4,16 @@
         "typeProject": "Music Service",
         "nameProject": "Sky music",
         "descriptionProject": "Music web application for listening to music, with the ability to register, filter tracks and add to favorites.",
-        "Tools": ["React", "Redux", "RTK Query", "Styled Components"]
+        "Tools": ["React", "Redux", "RTK Query", "Styled Components"],
+        "image": "/src/assets/image/music-app.jpg"
     },
     {
         "id": 2,
         "typeProject": "Advertisement Service",
         "nameProject": "Clone avito",
         "descriptionProject": "Application for viewing and publishing products and services",
-        "Tools": ["React", "Redux", "RTK Query", "CSS Modules", "Docker"]
+        "Tools": ["React", "Redux", "RTK Query", "CSS Modules", "Docker"],
+        "image": "/src/assets/image/avito.jpg"
     },
     {
         "id": 3,
@@ -24,13 +26,15 @@
             "RTK Query",
             "Styled Components",
             "Firebase"
-        ]
+        ],
+        "image": "/src/assets/image/fitness-pro.jpg"
     },
     {
         "id": 4,
         "typeProject": "Furniture web-app for telegram",
         "nameProject": "Furniture Store",
         "descriptionProject": "Web application integrated into the telegram bot",
-        "Tools": ["React", "Redux", "CSS Module"]
+        "Tools": ["React", "Redux", "CSS Module"],
+        "image": "/src/assets/image/furniture-store.jpg"
     }
 ]
