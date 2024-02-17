@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "typeProject": "Music Service",
+        "nameProject": "Sky music",
+        "descriptionProject": "Music web application for listening to music, with the ability to register, filter tracks and add to favorites.",
+        "Tools": ["React", "Redux", "RTK Query", "Styled Components"]
+    },
+    {
+        "id": 2,
+        "typeProject": "Advertisement Service",
+        "nameProject": "Clone avito",
+        "descriptionProject": "Application for viewing and publishing products and services",
+        "Tools": ["React", "Redux", "RTK Query", "CSS Modules", "Docker"]
+    },
+    {
+        "id": 3,
+        "typeProject": "Online training app",
+        "nameProject": "Fitness-pro",
+        "descriptionProject": "An application for online fitness training at home, with the ability to add courses, view lessons and change exercise progress",
+        "Tools": [
+            "React",
+            "Redux",
+            "RTK Query",
+            "Styled Components",
+            "Firebase"
+        ]
+    },
+    {
+        "id": 4,
+        "typeProject": "Furniture web-app for telegram",
+        "nameProject": "Furniture Store",
+        "descriptionProject": "Web application integrated into the telegram bot",
+        "Tools": ["React", "Redux", "CSS Module"]
+    }
+]

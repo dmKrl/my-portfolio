@@ -2,6 +2,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ProjectCardItem from '../UI/ProjectCardItem/ProjectCardItem';
+import projectData from '../../../projectData.json';
 
 const ProductSlider = () => {
     const settings = {
@@ -16,9 +17,14 @@ const ProductSlider = () => {
 
     return (
         <Slider {...settings}>
-            <ProjectCardItem />
-            <ProjectCardItem />
-            <ProjectCardItem />
+            {projectData.map((projectInfo) => {
+                return (
+                    <ProjectCardItem
+                        projectInfo={projectInfo}
+                        key={projectInfo.id}
+                    />
+                );
+            })}
         </Slider>
     );
 };
