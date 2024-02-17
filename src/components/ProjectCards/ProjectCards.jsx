@@ -1,4 +1,4 @@
-import ProjectCardItem from '../UI/ProjectCardItem/ProjectCardItem';
+import ProductSlider from '../ProductSlider/ProductSlider';
 import s from './ProjectCards.module.css';
 
 const ProjectCards = () => {
@@ -12,8 +12,7 @@ const ProjectCards = () => {
                 </div>
             </div>
             <div className={s.projectCardsItems}>
-                <ProjectCardItem />
-                <ProjectCardItem />
+                <ProductSlider />
             </div>
         </div>
     );

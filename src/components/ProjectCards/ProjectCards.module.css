@@ -1,7 +1,6 @@
 .projectCards {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 .projectCardsUp {
     margin-top: 115px;
@@ -15,36 +14,31 @@
     font-weight: 400;
     line-height: 100%;
 }
-.projectCardsItems {
-    display: flex;
-    gap: 20px;
-}
 .projectCardsItem {
     display: flex;
     flex-direction: column;
     width: 508px;
     height: 438px;
-    border-radius: 8px;
-    border-radius: 8px;
+    border-radius: 12px;
     background: var(--Main-Blue-Cards);
     transition: all 0.2s ease;
     border: 1px solid var(--Main-50);
-    box-shadow: 1px 4px 20px 0px rgba(0, 0, 0, 0.1),
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1),
         -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
 }
-.projectCardsItem:hover {
-    display: flex;
-    flex-direction: column;
-    width: 508px;
-    height: 438px;
-    transform: scale(1.01);
-    box-shadow: 1px 4px 20px 0px rgba(0, 0, 0, 0.4),
-        -1px 4px 20px 0px rgba(0, 0, 0, 0.4);
-}
+
 .projectCardsImgBox {
+    height: 478px;
     height: 330px;
+    overflow: hidden;
 }
-.projectCardsImgBox img:hover {
+.projectCardsImgBox img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+.projectCardsItem:hover img {
+    transform: scale(1.03);
 }
 .projectCardsBottomBox {
     display: flex;

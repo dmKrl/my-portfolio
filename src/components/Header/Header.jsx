@@ -41,9 +41,10 @@ const Header = () => {
                         <Link to="/">Contact</Link>
                     </nav>
                     <div className={s.headerOptions}>
-                        <select name="En" id="">
-                            <option value="En"></option>
-                            <option value="Ru"></option>
+                        <select>
+                            <option>En</option>
+                            <option value="En">En</option>
+                            <option value="Ru">Ru</option>
                         </select>
                         <div>
                             <div className={s.changeBackColor}>

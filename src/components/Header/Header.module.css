@@ -1,6 +1,5 @@
 .header {
     padding: 20px 150px;
-    transition: all 0.5s ease;
 }
 .headerNone {
     background: #00000000;

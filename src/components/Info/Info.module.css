@@ -1,8 +1,9 @@
 .info {
-    height: 1115px;
+    height: 1180px;
+    padding-bottom: 100px;
 }
 .infoContainer {
-    padding: 110px 150px 0px;
+    padding: 110px 150px 100px;
 }
 .infoDark {
     background: #161616;
