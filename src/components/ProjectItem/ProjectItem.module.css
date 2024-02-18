@@ -70,6 +70,10 @@
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
+    transition: all 0.2s ease;
+}
+.projectNav a:hover {
+    color: var(--Text-50);
 }
 .descriptionRight img {
     height: 450px;

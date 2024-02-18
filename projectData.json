@@ -5,7 +5,8 @@
         "nameProject": "Sky music",
         "descriptionProject": "Music web application for listening to music, with the ability to register, filter tracks and add to favorites.",
         "Tools": ["React", "Redux", "RTK Query", "Styled Components"],
-        "image": "/src/assets/image/music-app.jpg"
+        "image": "/src/assets/image/music-app.jpg",
+        "linkToCode": "https://github.com/dmKrl/app-music"
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "nameProject": "Clone avito",
         "descriptionProject": "Application for viewing and publishing products and services",
         "Tools": ["React", "Redux", "RTK Query", "CSS Modules", "Docker"],
-        "image": "/src/assets/image/avito.jpg"
+        "image": "/src/assets/image/avito.jpg",
+        "linkToCode": "https://github.com/dmKrl/sky-avito"
     },
     {
         "id": 3,
@@ -27,7 +29,8 @@
             "Styled Components",
             "Firebase"
         ],
-        "image": "/src/assets/image/fitness-pro.jpg"
+        "image": "/src/assets/image/fitness-pro.jpg",
+        "linkToCode": "https://github.com/dmKrl/fitness-pro"
     },
     {
         "id": 4,
@@ -35,6 +38,7 @@
         "nameProject": "Furniture Store",
         "descriptionProject": "Web application integrated into the telegram bot",
         "Tools": ["React", "Redux", "CSS Module"],
-        "image": "/src/assets/image/furniture-store.jpg"
+        "image": "/src/assets/image/furniture-store.jpg",
+        "linkToCode": "https://github.com/dmKrl/web-app-furniture"
     }
 ]

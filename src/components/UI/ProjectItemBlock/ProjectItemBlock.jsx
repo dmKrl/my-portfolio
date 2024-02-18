@@ -32,7 +32,9 @@ const ProjectItemBlock = ({ project }) => {
                     </div>
                 </div>
                 <div className={s.projectNav}>
-                    <Link to="/project">View the code 🠒</Link>
+                    <Link to={project.linkToCode} target="_blank">
+                        View the code 🠒
+                    </Link>
                     <Link to="/project">View the project 🠒</Link>
                 </div>
             </div>

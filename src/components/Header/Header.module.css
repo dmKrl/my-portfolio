@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     height: 24px;
-    gap: 8px;
+    gap: 4px;
     background: var(--Main-Button-Background);
     border-radius: 20px;
     border: 1px solid var(--Main-100);

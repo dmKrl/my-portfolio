@@ -44,3 +44,9 @@
 .welcomeDownText span {
     color: var(--Accent-Blue-light);
 }
+.anchor {
+    transition: all 0.2s ease;
+}
+.anchor:hover {
+    transform: scale3d(1.02);
+}

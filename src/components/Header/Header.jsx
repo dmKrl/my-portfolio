@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import s from './Header.module.css';
 import { useTheme } from '../../hooks/use-theme';
+import { Link as LinkScroll } from 'react-scroll';
 const Header = () => {
     const location = useLocation();
     const { theme, setTheme } = useTheme();
@@ -36,9 +37,11 @@ const Header = () => {
                 <div className={s.headerRight}>
                     <nav className={s.headerNavBar}>
                         <Link to="/">Home</Link>
-                        <Link to="/">Tools</Link>
+                        <LinkScroll to="skills">Tools</LinkScroll>
                         <Link to="/project">Project</Link>
-                        <Link to="/">Contact</Link>
+                        <LinkScroll to="contact" smooth={true}>
+                            Contact
+                        </LinkScroll>
                     </nav>
                     <div className={s.headerOptions}>
                         {/* В дальнейшем добавится смена языка в приложении */}

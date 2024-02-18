@@ -8,8 +8,8 @@ const FooterMessager = () => {
 
     return (
         <>
-            <div className={s.footerDownCenterMessage}>
-                <Link>
+            <div className={s.footerDownCenterMessage} name="contact">
+                <Link to="mailto:dm_krl@mail.ru" target="_blank">
                     {theme === 'dark' ? (
                         <img
                             src="/src/assets/image/icon/mail.svg"
@@ -22,7 +22,7 @@ const FooterMessager = () => {
                         />
                     )}
                 </Link>
-                <Link>
+                <Link to="https://t.me/Grogupa" target="_blank">
                     {theme === 'dark' ? (
                         <img
                             src="/src/assets/image/icon/tg.svg"
@@ -35,7 +35,7 @@ const FooterMessager = () => {
                         />
                     )}
                 </Link>
-                <Link>
+                <Link to="https://wa.me/qr/HPYENM3JE5YYH1" target="_blank">
                     {theme === 'dark' ? (
                         <img
                             src="/src/assets/image/icon/whatsapp.svg"
@@ -48,7 +48,7 @@ const FooterMessager = () => {
                         />
                     )}
                 </Link>
-                <Link>
+                <Link to="https://github.com/dmKrl" target="_blank">
                     {theme === 'dark' ? (
                         <img
                             src="/src/assets/image/icon/git.svg"
@@ -61,7 +61,7 @@ const FooterMessager = () => {
                         />
                     )}
                 </Link>
-                <Link>
+                <Link to="https://linkedin.com/in/krldmitrya" target="_blank">
                     {theme === 'dark' ? (
                         <img
                             src="/src/assets/image/icon/linkedin.svg"
