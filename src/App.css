@@ -44,3 +44,20 @@ ul li {
     height: 100%;
     background: var(--Main-Bg);
 }
+.slick-prev,
+.slick-next {
+    top: -24% !important;
+}
+
+.slick-prev {
+    left: 1150px !important;
+}
+.slick-next {
+    right: 75px !important;
+}
+.slick-prev:before {
+    content: url('/src/assets/image/icon/Scroll-slick-prev.svg') !important;
+}
+.slick-next:before {
+    content: url('/src/assets/image/icon/Scroll-slick-next.svg') !important;
+}

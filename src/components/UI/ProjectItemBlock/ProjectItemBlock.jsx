@@ -39,7 +39,7 @@ const ProjectItemBlock = ({ project }) => {
                 </div>
             </div>
             <div className={s.descriptionRight}>
-                <img src="/src/assets/image/Image-project.png" alt="" />
+                <img src={project.imageLaptop} alt="" />
             </div>
         </div>
     );

@@ -6,6 +6,7 @@
         "descriptionProject": "Music web application for listening to music, with the ability to register, filter tracks and add to favorites.",
         "Tools": ["React", "Redux", "RTK Query", "Styled Components"],
         "image": "/src/assets/image/music-app.jpg",
+        "imageLaptop": "/src/assets/image/music-app-laptop.png",
         "linkToCode": "https://github.com/dmKrl/app-music"
     },
     {
@@ -15,6 +16,7 @@
         "descriptionProject": "Application for viewing and publishing products and services",
         "Tools": ["React", "Redux", "RTK Query", "CSS Modules", "Docker"],
         "image": "/src/assets/image/avito.jpg",
+        "imageLaptop": "/src/assets/image/avito-laptop.png",
         "linkToCode": "https://github.com/dmKrl/sky-avito"
     },
     {
@@ -30,6 +32,7 @@
             "Firebase"
         ],
         "image": "/src/assets/image/fitness-pro.jpg",
+        "imageLaptop": "/src/assets/image/fitness-pro-laptop.png",
         "linkToCode": "https://github.com/dmKrl/fitness-pro"
     },
     {
@@ -39,6 +42,7 @@
         "descriptionProject": "Web application integrated into the telegram bot",
         "Tools": ["React", "Redux", "CSS Module"],
         "image": "/src/assets/image/furniture-store.jpg",
+        "imageLaptop": "/src/assets/image/furniture-store-laptop.png",
         "linkToCode": "https://github.com/dmKrl/web-app-furniture"
     }
 ]
