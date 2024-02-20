@@ -82,10 +82,7 @@ const Header = () => {
                                         )}
                                     </svg>
                                 </label> */}
-                                <button
-                                    className={s.changeButtonLight}
-                                    onClick={handleLightThemeClick}
-                                >
+                                <button className={s.changeButton} onClick={handleLightThemeClick}>
                                     <svg
                                         style={{
                                             width: '20px',
@@ -99,10 +96,13 @@ const Header = () => {
                                         )}
                                     </svg>
                                 </button>
-                                <button
-                                    className={s.changeButtonDark}
-                                    onClick={handleDarkThemeClick}
-                                >
+                                {theme === 'dark' ? (
+                                    <div className={s.changeButtonDark}></div>
+                                ) : (
+                                    <div className={s.changeButtonLight}></div>
+                                )}
+
+                                <button className={s.changeButton} onClick={handleDarkThemeClick}>
                                     <svg
                                         style={{
                                             width: '20px',

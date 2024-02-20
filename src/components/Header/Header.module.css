@@ -45,8 +45,11 @@
 .changeBackColor {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
     height: 24px;
     gap: 4px;
+    width: 60px;
     background: var(--Main-Button-Background);
     border-radius: 20px;
     border: 1px solid var(--Main-100);
@@ -64,9 +67,11 @@
     background: green;
 }
 .changeButtonLight {
+    position: absolute;
     background: var(--Main-Button-Background-Light);
     border-radius: 20px;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
+    transform: translateX(-15%);
     width: 28px;
     height: 24px;
 }
@@ -75,8 +80,10 @@
     border-radius: 20px;
 }
 .changeButtonDark {
+    position: absolute;
     background: var(--Main-Button-Background-Dark);
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
+    transform: translateX(95%);
     border-radius: 20px;
     width: 28px;
     height: 24px;
@@ -84,4 +91,7 @@
 .changeButtonDark:active {
     background: var(--Main-Button-Background-Dark);
     border-radius: 20px;
+}
+.changeButton {
+    z-index: 2;
 }
