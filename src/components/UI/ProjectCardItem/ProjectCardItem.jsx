@@ -12,6 +12,7 @@ const ProjectCardItem = ({ projectInfo }) => {
                 <h3 className={s.projectCardsBottomHeading}>
                     {projectInfo.nameProject}
                 </h3>
+                <span className={s.projectCardsText}>Web Development</span>
                 <Link
                     className={s.projectCardsLink}
                     to={`/project/${projectInfo.id}`}

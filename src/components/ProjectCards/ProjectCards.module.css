@@ -26,7 +26,12 @@
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1),
         -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
 }
-
+.projectCardsItem:hover a {
+    opacity: 1;
+}
+.projectCardsItem:hover span {
+    opacity: 0;
+}
 .projectCardsImgBox {
     height: 478px;
     height: 330px;
@@ -45,6 +50,7 @@
     flex-direction: column;
     padding-left: 20px;
 }
+
 .projectCardsBottomHeading {
     color: var(--Text-100);
     font-family: 'Satoshi';
@@ -57,6 +63,21 @@
     margin-bottom: 10px;
 }
 .projectCardsBottomBox a {
+    opacity: 0;
+    z-index: 2;
+    overflow: hidden;
+    color: var(--Text-100);
+    text-overflow: ellipsis;
+    font-family: 'Satoshi';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    transition: all 0.2s ease;
+}
+.projectCardsBottomBox span {
+    position: absolute;
+    bottom: 24px;
     overflow: hidden;
     color: var(--Text-100);
     text-overflow: ellipsis;

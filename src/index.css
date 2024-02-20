@@ -33,6 +33,13 @@ html[data-theme='dark'] {
         );
     --Main-Bg: #000000;
     --Main-Cards: rgba(217, 229, 252, 0);
+
+    .slick-prev:before {
+        content: url('/src/assets/image/icon/Scroll-slick-prev.svg') !important;
+    }
+    .slick-next:before {
+        content: url('/src/assets/image/icon/Scroll-slick-next.svg') !important;
+    }
 }
 /* light theme */
 
@@ -57,4 +64,11 @@ html[data-theme='light'] {
     );
     --Main-Bg: #e7e7e7;
     --Main-Cards: #d9e5fc;
+
+    .slick-prev:before {
+        content: url('/src/assets/image/icon/Scroll-black-slick-prev.svg') !important;
+    }
+    .slick-next:before {
+        content: url('/src/assets/image/icon/Scroll-black-slick-next.svg') !important;
+    }
 }

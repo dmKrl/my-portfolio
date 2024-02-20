@@ -55,9 +55,3 @@ ul li {
 .slick-next {
     right: 75px !important;
 }
-.slick-prev:before {
-    content: url('/src/assets/image/icon/Scroll-slick-prev.svg') !important;
-}
-.slick-next:before {
-    content: url('/src/assets/image/icon/Scroll-slick-next.svg') !important;
-}
