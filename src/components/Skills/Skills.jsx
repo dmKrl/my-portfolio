@@ -4,7 +4,7 @@ import skillsData from '../../../skillsData.json';
 
 const Skills = () => {
     return (
-        <div className={s.skills}>
+        <div className={s.skills} name="skills">
             <div className={s.skillsLeft}>
                 <h1 className={s.skillsHeading}>My skills</h1>
                 <p className={s.skillsText}>

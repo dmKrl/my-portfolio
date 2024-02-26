@@ -43,8 +43,12 @@ const Header = () => {
                 <div className={s.headerRight}>
                     <nav className={s.headerNavBar}>
                         <Link to="/">Home</Link>
-                        <LinkScroll to="skills">Tools</LinkScroll>
-                        <Link to="/project">Project</Link>
+                        <LinkScroll to="skills" smooth={true}>
+                            Tools
+                        </LinkScroll>
+                        <LinkScroll to="project" smooth={true}>
+                            Project
+                        </LinkScroll>
                         <LinkScroll to="contact" smooth={true}>
                             Contact
                         </LinkScroll>
