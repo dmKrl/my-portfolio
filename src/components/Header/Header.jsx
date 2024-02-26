@@ -2,6 +2,8 @@ import { Link, useLocation } from 'react-router-dom';
 import s from './Header.module.css';
 import { useTheme } from '../../hooks/use-theme';
 import { Link as LinkScroll } from 'react-scroll';
+import imgPath from '../../../config';
+
 const Header = () => {
     const location = useLocation();
     const { theme, setTheme } = useTheme();
@@ -27,9 +29,13 @@ const Header = () => {
                     <Link to="/">
                         <svg style={{ width: '97px', height: '31px' }}>
                             {theme === 'dark' ? (
-                                <use xlinkHref="/src/assets/image/icon/sprite.svg#logo-white" />
+                                <use
+                                    xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#logo-white`}
+                                />
                             ) : (
-                                <use xlinkHref="/src/assets/image/icon/sprite.svg#logo-black" />
+                                <use
+                                    xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#logo-black`}
+                                />
                             )}
                         </svg>
                     </Link>
@@ -44,16 +50,12 @@ const Header = () => {
                         </LinkScroll>
                     </nav>
                     <div className={s.headerOptions}>
-                        {/* В дальнейшем добавится смена языка в приложении */}
-                        {/* <select>
-                            <option>En</option>
-                            <option value="En">En</option>
-                            <option value="Ru">Ru</option>
-                        </select> */}
                         <div>
                             <div className={s.changeBackColor}>
-                                {/* <input type="radio" id="light" name="mode" />
-                                <label htmlFor="light">
+                                <button
+                                    className={s.changeButton}
+                                    onClick={handleLightThemeClick}
+                                >
                                     <svg
                                         style={{
                                             width: '20px',
@@ -61,38 +63,13 @@ const Header = () => {
                                         }}
                                     >
                                         {theme === 'dark' ? (
-                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#sun-white" />
+                                            <use
+                                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#sun-white`}
+                                            />
                                         ) : (
-                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#sun-white" />
-                                        )}
-                                    </svg>
-                                </label>
-                                <input type="radio" id="dark" name="mode" />
-                                <label htmlFor="dark">
-                                    <svg
-                                        style={{
-                                            width: '20px',
-                                            height: '20px',
-                                        }}
-                                    >
-                                        {theme === 'dark' ? (
-                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#moon-black" />
-                                        ) : (
-                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#moon-black" />
-                                        )}
-                                    </svg>
-                                </label> */}
-                                <button className={s.changeButton} onClick={handleLightThemeClick}>
-                                    <svg
-                                        style={{
-                                            width: '20px',
-                                            height: '20px',
-                                        }}
-                                    >
-                                        {theme === 'dark' ? (
-                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#sun-white" />
-                                        ) : (
-                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#sun-white" />
+                                            <use
+                                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#sun-white`}
+                                            />
                                         )}
                                     </svg>
                                 </button>
@@ -102,7 +79,10 @@ const Header = () => {
                                     <div className={s.changeButtonLight}></div>
                                 )}
 
-                                <button className={s.changeButton} onClick={handleDarkThemeClick}>
+                                <button
+                                    className={s.changeButton}
+                                    onClick={handleDarkThemeClick}
+                                >
                                     <svg
                                         style={{
                                             width: '20px',
@@ -110,9 +90,13 @@ const Header = () => {
                                         }}
                                     >
                                         {theme === 'dark' ? (
-                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#moon-black" />
+                                            <use
+                                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#moon-black`}
+                                            />
                                         ) : (
-                                            <use xlinkHref="/src/assets/image/icon/sprite.svg#moon-black" />
+                                            <use
+                                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#moon-black`}
+                                            />
                                         )}
                                     </svg>
                                 </button>

@@ -7,9 +7,9 @@
 }
 .infoDark {
     background: #161616;
-    background-image: url('/src/assets/image/bg-info-dark.png');
+    background-image: url('/image/bg-info-dark.png');
 }
 .infoLight {
     background: #eeeeee;
-    background-image: url('/src/assets/image/bg-info-light.png');
+    background-image: url('/image/bg-info-light.png');
 }

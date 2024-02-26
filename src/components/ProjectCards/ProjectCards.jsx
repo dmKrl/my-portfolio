@@ -6,10 +6,6 @@ const ProjectCards = () => {
         <div className={s.projectCards}>
             <div className={s.projectCardsUp}>
                 <h1 className={s.projectCardsHeading}>Portfolio</h1>
-                <div>
-                    <button></button>
-                    <button></button>
-                </div>
             </div>
             <div className={s.projectCardsItems}>
                 <ProductSlider />

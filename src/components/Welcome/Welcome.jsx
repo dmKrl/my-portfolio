@@ -1,8 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useSelector } from 'react-redux';
 import s from './Welcome.module.css';
 import { selectThemeStore } from '../../redux/themeSlice/themeSlice';
 import { Link } from 'react-scroll';
-/* eslint-disable react/no-unescaped-entities */
+import imgPath from '../../../config';
+
 const Welcome = () => {
     const { theme } = useSelector(selectThemeStore);
 
@@ -14,8 +16,8 @@ const Welcome = () => {
                         className={s.mainBackImg}
                         src={
                             theme === 'dark'
-                                ? '/src/assets/image/image-back.png'
-                                : '/src/assets/image/image-back-white.png'
+                                ? `${imgPath.imagePath}/image/image-back.png`
+                                : `${imgPath.imagePath}/image/image-back-white.png`
                         }
                         alt=""
                     />
@@ -41,11 +43,15 @@ const Welcome = () => {
                 >
                     {theme === 'dark' ? (
                         <svg style={{ width: '48px', height: '48px' }}>
-                            <use xlinkHref="/src/assets/image/icon/sprite.svg#scroll-black" />
+                            <use
+                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#scroll-black`}
+                            />
                         </svg>
                     ) : (
                         <svg style={{ width: '48px', height: '48px' }}>
-                            <use xlinkHref="/src/assets/image/icon/sprite.svg#scroll-white" />
+                            <use
+                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#scroll-white`}
+                            />
                         </svg>
                     )}
                 </Link>

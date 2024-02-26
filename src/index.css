@@ -1,4 +1,4 @@
-@import url('./assets/fonts/stylesheet.css');
+@import url('/fonts/stylesheet.css');
 * {
     margin: 0;
     padding: 0;
@@ -35,10 +35,10 @@ html[data-theme='dark'] {
     --Main-Cards: rgba(217, 229, 252, 0);
 
     .slick-prev:before {
-        content: url('/src/assets/image/icon/Scroll-slick-prev.svg') !important;
+        content: url('/image/icon/Scroll-slick-prev.svg') !important;
     }
     .slick-next:before {
-        content: url('/src/assets/image/icon/Scroll-slick-next.svg') !important;
+        content: url('/image/icon/Scroll-slick-next.svg') !important;
     }
 }
 /* light theme */
@@ -66,9 +66,9 @@ html[data-theme='light'] {
     --Main-Cards: #d9e5fc;
 
     .slick-prev:before {
-        content: url('/src/assets/image/icon/Scroll-black-slick-prev.svg') !important;
+        content: url('/image/icon/Scroll-black-slick-prev.svg') !important;
     }
     .slick-next:before {
-        content: url('/src/assets/image/icon/Scroll-black-slick-next.svg') !important;
+        content: url('/image/icon/Scroll-black-slick-next.svg') !important;
     }
 }

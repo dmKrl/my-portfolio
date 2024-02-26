@@ -4,10 +4,10 @@ import FooterMessager from './../FooterMessagers/FooterMessager';
 import { selectThemeStore } from '../../redux/themeSlice/themeSlice';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
+import imgPath from '../../../config';
 
 const Footer = () => {
     const { theme } = useSelector(selectThemeStore);
-
     return (
         <div className={s.footer} name="footer">
             <MarqueeContact />
@@ -39,8 +39,8 @@ const Footer = () => {
                         <img
                             src={`${
                                 theme === 'dark'
-                                    ? '/src/assets/image/icon/scroll-black-up.svg'
-                                    : '/src/assets/image/icon/scroll-light-up.svg'
+                                    ? `${imgPath.imagePath}/image/icon/scroll-black-up.svg`
+                                    : `${imgPath.imagePath}/image/icon/scroll-light-up.svg`
                             }`}
                             alt=""
                         />

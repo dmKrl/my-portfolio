@@ -6,11 +6,11 @@
 }
 .headerDark {
     background: #161616;
-    background-image: url('/src/assets/image/bg-info-dark.png');
+    background-image: url('/image/bg-info-dark.png');
 }
 .headerLight {
     background: #eeeeee;
-    background-image: url('/src/assets/image/bg-info-light.png');
+    background-image: url('/image/bg-info-light.png');
 }
 
 .headerWrapper {
@@ -44,8 +44,8 @@
 }
 .changeBackColor {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: stretch;
+    justify-content: space-around;
     position: relative;
     height: 24px;
     gap: 4px;
@@ -69,11 +69,11 @@
 .changeButtonLight {
     position: absolute;
     background: var(--Main-Button-Background-Light);
-    border-radius: 20px;
     transition: all 0.2s ease;
-    transform: translateX(-15%);
+    transform: translateX(-58%);
+    border-radius: 20px;
     width: 28px;
-    height: 24px;
+    height: 23px;
 }
 .changeButtonLight:active {
     background: var(--Main-Button-Background-Light);
@@ -83,7 +83,7 @@
     position: absolute;
     background: var(--Main-Button-Background-Dark);
     transition: all 0.2s ease;
-    transform: translateX(95%);
+    transform: translateX(58%);
     border-radius: 20px;
     width: 28px;
     height: 24px;

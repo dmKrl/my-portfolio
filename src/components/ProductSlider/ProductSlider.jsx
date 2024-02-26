@@ -4,8 +4,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import ProjectCardItem from '../UI/ProjectCardItem/ProjectCardItem';
 import projectData from '../../../projectData.json';
 import '../../App.css';
-// import SlickButtonNext from '../UI/SlickButtonNext/SlickButtonNext';
-// import SlickButtonPrev from '../UI/SlickButtonPrev/SlickButtonPrev';
 
 const ProductSlider = () => {
     const settings = {
@@ -16,8 +14,6 @@ const ProductSlider = () => {
         centerPadding: '100px 20px',
         slidesToScroll: 1,
         focusOnSelect: true,
-        // nextArrow: <SlickButtonNext />,
-        // prevArrow: <SlickButtonPrev />,
     };
 
     return (

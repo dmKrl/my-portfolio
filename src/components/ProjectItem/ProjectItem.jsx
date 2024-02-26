@@ -11,7 +11,7 @@ const ProjectItem = () => {
     );
     return (
         <div className={s.projectWrapper}>
-            <ProjectItemBlock project={projectDataInfo[0]} />;
+            <ProjectItemBlock project={projectDataInfo[0]} />
         </div>
     );
 };
