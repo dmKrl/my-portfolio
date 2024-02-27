@@ -72,3 +72,27 @@ html[data-theme='light'] {
         content: url('/image/icon/Scroll-black-slick-next.svg') !important;
     }
 }
+
+.slick-list {
+    padding: 0px 100px 50px !important;
+}
+
+.slick-slider {
+    position: static;
+}
+@media (max-width: 1540px) {
+    .slick-slide {
+        max-width: 530px;
+    }
+    .slick-list {
+        padding: 0px 160px 50px !important;
+    }
+}
+@media (max-width: 1280px) {
+    .slick-slide {
+        max-width: 530px;
+    }
+    .slick-list {
+        padding: 0px 160px 50px !important;
+    }
+}

@@ -6,7 +6,7 @@ export default function MarqueeContact() {
         <div
             className={s.tickerContact}
             style={{
-                width: '1600px',
+                maxWidth: '1600px',
                 padding: '16px 0px',
                 whiteSpace: 'nowrap',
                 color: 'white',

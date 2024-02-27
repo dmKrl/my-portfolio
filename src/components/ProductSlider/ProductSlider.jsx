@@ -6,14 +6,41 @@ import projectData from '../../../projectData.json';
 import '../../App.css';
 
 const ProductSlider = () => {
+    console.log(window.innerWidth);
     const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 2,
         centerMode: true,
         centerPadding: '100px 20px',
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 1540,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 0,
+                    focusOnSelect: false,
+
+                    // centerPadding: '100px 20px',
+                },
+            },
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    focusOnSelect: false,
+
+                    // centerPadding: '100px 20px',
+                },
+            },
+            {
+                breakpoint: 787,
+                swipe: false,
+            },
+        ],
     };
 
     return (

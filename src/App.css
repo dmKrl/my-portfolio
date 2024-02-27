@@ -46,12 +46,29 @@ ul li {
 }
 .slick-prev,
 .slick-next {
-    top: -24% !important;
+    top: 22% !important;
 }
 
 .slick-prev {
     left: 1150px !important;
 }
 .slick-next {
-    right: 75px !important;
+    left: 1210px !important;
+}
+
+@media (max-width: 1600px) {
+    .slick-prev {
+        left: 1060px !important;
+    }
+    .slick-next {
+        left: 1120px !important;
+    }
+}
+@media (max-width: 1420px) {
+    .slick-prev {
+        left: 690px !important;
+    }
+    .slick-next {
+        left: 745px !important;
+    }
 }
