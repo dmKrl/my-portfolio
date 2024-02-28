@@ -93,18 +93,17 @@
 .projectCardsBottomBox a:hover {
     color: var(--Text-50);
 }
-/* 
+
 @media (max-width: 1280px) {
     .projectCardsItem {
-        display: flex;
-        flex-direction: column;
-        width: 508px;
-        height: 438px;
-        border-radius: 12px;
-        background: var(--Main-Blue-Cards);
-        transition: all 0.2s ease;
-        border: 1px solid var(--Main-50);
-        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1),
-            -1px 4px 20px 0px rgba(0, 0, 0, 0.1);
+        width: 433px;
+        height: 372px;
     }
-} */
+    .projectCardsHeading {
+        font-size: 80px;
+    }
+    .projectCardsUp {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}

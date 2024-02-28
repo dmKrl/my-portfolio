@@ -72,3 +72,9 @@ ul li {
         left: 745px !important;
     }
 }
+@media (max-width: 1280px) {
+    .slick-prev,
+    .slick-next {
+        top: 13% !important;
+    }
+}

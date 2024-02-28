@@ -13,3 +13,13 @@
     background: #eeeeee;
     background-image: url('/image/bg-info-light.png');
 }
+
+@media (max-width: 1280px) {
+    .info {
+        height: 1000px;
+        padding-bottom: 0px;
+    }
+    .infoContainer {
+        padding: 80px 20px 100px 20px;
+    }
+}

@@ -51,6 +51,16 @@
     transform: scale3d(1.02);
 }
 
+@media (max-width: 1470px) {
+    .welcomeHeading {
+        font-size: 140px;
+    }
+    .mainBackImg {
+        bottom: 30px;
+        width: 400px;
+        height: 400px;
+    }
+}
 @media (max-width: 1280px) {
     .welcome {
         padding: 0px 20px;
@@ -59,7 +69,7 @@
         font-size: 120px;
     }
     .mainBackImg {
-        bottom: 80px;
+        bottom: 30px;
         width: 365.761px;
         height: 350.909px;
     }

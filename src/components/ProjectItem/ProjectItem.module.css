@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    max-width: 400px;
 }
 .projectDescription {
     color: var(--Text-50);
@@ -77,4 +78,10 @@
 }
 .descriptionRight img {
     height: 450px;
+}
+
+@media (max-width: 1280px) {
+    .projectWrapper {
+        padding: 77px 20px;
+    }
 }
