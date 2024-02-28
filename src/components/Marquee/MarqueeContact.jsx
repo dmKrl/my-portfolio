@@ -10,7 +10,7 @@ export default function MarqueeContact() {
                 padding: '16px 0px',
                 whiteSpace: 'nowrap',
                 color: 'white',
-                scrollWhen: 'overflow',
+                scrollWhen: 'always',
                 speed: 0,
             }}
         >

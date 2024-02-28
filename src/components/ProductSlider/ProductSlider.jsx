@@ -12,7 +12,7 @@ const ProductSlider = () => {
         speed: 500,
         slidesToShow: 2,
         centerMode: true,
-        centerPadding: '100px 20px',
+        centerPadding: '100px',
         slidesToScroll: 3,
         focusOnSelect: true,
         responsive: [
@@ -22,8 +22,6 @@ const ProductSlider = () => {
                     slidesToShow: 1,
                     slidesToScroll: 0,
                     focusOnSelect: false,
-
-                    // centerPadding: '100px 20px',
                 },
             },
             {
@@ -32,8 +30,6 @@ const ProductSlider = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     focusOnSelect: false,
-
-                    // centerPadding: '100px 20px',
                 },
             },
             {

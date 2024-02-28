@@ -50,3 +50,17 @@
 .anchor:hover {
     transform: scale3d(1.02);
 }
+
+@media (max-width: 1280px) {
+    .welcome {
+        padding: 0px 20px;
+    }
+    .welcomeHeading {
+        font-size: 120px;
+    }
+    .mainBackImg {
+        bottom: 80px;
+        width: 365.761px;
+        height: 350.909px;
+    }
+}
