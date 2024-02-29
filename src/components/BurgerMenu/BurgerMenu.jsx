@@ -11,7 +11,6 @@ const BurgerMenu = () => {
     const toggleMenu = () => {
         dispatch(setIsOpenNavMenu());
     };
-    console.log(isOpen);
     return (
         <>
             <div className={s.burgerMenu} onClick={() => toggleMenu()}>

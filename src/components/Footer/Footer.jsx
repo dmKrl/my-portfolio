@@ -5,8 +5,10 @@ import { selectThemeStore } from '../../redux/themeSlice/themeSlice';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-scroll';
 import imgPath from '../../../config';
+import { useLocation } from 'react-router-dom';
 
 const Footer = () => {
+    const location = useLocation();
     const { theme } = useSelector(selectThemeStore);
     return (
         <div className={s.footer} name="footer">
@@ -27,25 +29,29 @@ const Footer = () => {
                         <FooterMessager />
                     </div>
                 </div>
-                <div className={s.footerAnchor}>
-                    <Link
-                        className={s.anchor}
-                        to="header"
-                        spy={true}
-                        smooth={true}
-                        offset={50}
-                        duration={500}
-                    >
-                        <img
-                            src={`${
-                                theme === 'dark'
-                                    ? `${imgPath.imagePath}/image/icon/scroll-black-up.svg`
-                                    : `${imgPath.imagePath}/image/icon/scroll-light-up.svg`
-                            }`}
-                            alt=""
-                        />
-                    </Link>
-                </div>
+                {location.pathname === '/' ? (
+                    <div className={s.footerAnchor}>
+                        <Link
+                            className={s.anchor}
+                            to="header"
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={500}
+                        >
+                            <img
+                                src={`${
+                                    theme === 'dark'
+                                        ? `${imgPath.imagePath}/image/icon/scroll-black-up.svg`
+                                        : `${imgPath.imagePath}/image/icon/scroll-light-up.svg`
+                                }`}
+                                alt=""
+                            />
+                        </Link>
+                    </div>
+                ) : (
+                    ''
+                )}
             </div>
             <div className={s.footerCreatedBy}>
                 <span>© Dmitry Kralichkin 2023</span>

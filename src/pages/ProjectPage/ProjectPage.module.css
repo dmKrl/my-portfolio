@@ -10,3 +10,8 @@
     background: #eeeeee;
     background-image: url('/image/bg-info-light.png');
 }
+@media (max-width: 768px) {
+    .projectPageContainer {
+        min-height: 600px;
+    }
+}

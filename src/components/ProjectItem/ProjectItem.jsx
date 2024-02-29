@@ -5,7 +5,6 @@ import { useParams } from 'react-router-dom';
 
 const ProjectItem = () => {
     const params = useParams();
-    console.log(params);
     const projectDataInfo = projectData.filter(
         (projectInfo) => projectInfo.id === Number(params.id)
     );

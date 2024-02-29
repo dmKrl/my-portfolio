@@ -4,13 +4,9 @@
 .headerNone {
     background: #00000000;
 }
-.headerDark {
-    background: #161616;
-    background-image: url('/image/bg-info-dark.png');
-}
-.headerLight {
-    background: #eeeeee;
-    background-image: url('/image/bg-info-light.png');
+.headerTheme {
+    background: var(--header-theme);
+    background-image: var(--header-backgroundImg);
 }
 
 .headerWrapper {
@@ -132,17 +128,14 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: var(--Main-90);
+    background-color: var(--header-theme);
+    background-image: var(--header-backgroundImg);
     z-index: 99;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-}
-
-.nav-menu li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    gap: 20px;
 }
 
 .burgerMenuLine:nth-of-type(1) {
@@ -185,6 +178,10 @@
         gap: 15px;
     }
     .headerNavBar a {
-        font-size: 18px;
+        font-size: 26px;
+    }
+    .headerLogo {
+        width: 75px;
+        height: 24px;
     }
 }

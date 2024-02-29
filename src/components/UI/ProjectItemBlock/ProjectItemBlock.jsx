@@ -4,7 +4,6 @@ import s from '../../ProjectItem/ProjectItem.module.css';
 import SkillsItem from '../SkillsItem/SkillsItem';
 
 const ProjectItemBlock = ({ project }) => {
-    console.log(project);
     return (
         <div className={s.projectContainer} key={project.id}>
             <div className={s.projectLeft}>
@@ -26,7 +25,7 @@ const ProjectItemBlock = ({ project }) => {
                     <div className={s.projectSkills}>
                         {project.Tools.map((tool) => {
                             return (
-                                <SkillsItem key={project.id}>{tool}</SkillsItem>
+                                <SkillsItem key={project.id + 1}>{tool}</SkillsItem>
                             );
                         })}
                     </div>

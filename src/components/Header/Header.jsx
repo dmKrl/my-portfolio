@@ -1,12 +1,18 @@
 import { Link, useLocation } from 'react-router-dom';
 import s from './Header.module.css';
 import { useTheme } from '../../hooks/useTheme';
-import { Link as LinkScroll } from 'react-scroll';
 import imgPath from '../../../config';
+import { useResize } from '../../hooks/useResize';
+import BurgerMenu from './../BurgerMenu/BurgerMenu';
+import { selectIsOpenNavMenu } from '../../redux/navMenuSlice/navMenuSlice';
+import { useSelector } from 'react-redux';
+import NavBar from '../NavBar/NavBar';
 
 const Header = () => {
     const location = useLocation();
     const { theme, setTheme } = useTheme();
+    const { isScreenMob } = useResize();
+    const isOpen = useSelector(selectIsOpenNavMenu);
 
     const handleLightThemeClick = () => {
         setTheme('light');
@@ -19,11 +25,7 @@ const Header = () => {
     return (
         <header
             className={`${s.header} ${
-                location.pathname === '/'
-                    ? s.headerNone
-                    : theme === 'dark'
-                    ? s.headerDark
-                    : s.headerLight
+                location.pathname === '/' ? s.headerNone : s.headerTheme
             }`}
             name="header"
         >
@@ -44,72 +46,24 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className={s.headerRight}>
-                    <nav className={s.headerNavBar}>
-                        <Link to="/">Home</Link>
-                        <LinkScroll to="skills" smooth={true}>
-                            Tools
-                        </LinkScroll>
-                        <LinkScroll to="project" smooth={true}>
-                            Project
-                        </LinkScroll>
-                        <LinkScroll to="contact" smooth={true}>
-                            Contact
-                        </LinkScroll>
-                    </nav>
-                    <div className={s.headerOptions}>
-                        <div>
-                            <div className={s.changeBackColor}>
-                                <button
-                                    className={s.changeButton}
-                                    onClick={handleLightThemeClick}
-                                >
-                                    <svg
-                                        style={{
-                                            width: '20px',
-                                            height: '20px',
-                                        }}
-                                    >
-                                        {theme === 'dark' ? (
-                                            <use
-                                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#sun-white`}
-                                            />
-                                        ) : (
-                                            <use
-                                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#sun-white`}
-                                            />
-                                        )}
-                                    </svg>
-                                </button>
-                                {theme === 'dark' ? (
-                                    <div className={s.changeButtonDark}></div>
-                                ) : (
-                                    <div className={s.changeButtonLight}></div>
-                                )}
-
-                                <button
-                                    className={s.changeButton}
-                                    onClick={handleDarkThemeClick}
-                                >
-                                    <svg
-                                        style={{
-                                            width: '20px',
-                                            height: '20px',
-                                        }}
-                                    >
-                                        {theme === 'dark' ? (
-                                            <use
-                                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#moon-black`}
-                                            />
-                                        ) : (
-                                            <use
-                                                xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#moon-black`}
-                                            />
-                                        )}
-                                    </svg>
-                                </button>
-                            </div>
+                    {isScreenMob ? (
+                        <BurgerMenu />
+                    ) : (
+                        <NavBar
+                            theme={theme}
+                            handleDarkThemeClick={handleDarkThemeClick}
+                            handleLightThemeClick={handleLightThemeClick}
+                        />
+                    )}
+                    {isOpen && isScreenMob && (
+                        <div className={s.navBlock}>
+                            <NavBar
+                                theme={theme}
+                                handleDarkThemeClick={handleDarkThemeClick}
+                                handleLightThemeClick={handleLightThemeClick}
+                            />
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
         </header>

@@ -85,6 +85,9 @@
         display: flex;
         gap: 68px;
     }
+    .footerDownCenter {
+        gap: 10px;
+    }
     .footerDownLeftHeading {
         font-size: 60px;
     }
@@ -94,5 +97,24 @@
     .footerDownCenterText {
         width: 227px;
         font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .footerContainer {
+        justify-content: center;
+        margin-top: 4px;
+    }
+    .footerDown {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footerDownLeftHeading {
+        font-size: 42px;
+    }
+    .footerDownLeftText {
+        font-size: 14px;
+    }
+    .footerDownCenterText {
+        width: 290px;
     }
 }
