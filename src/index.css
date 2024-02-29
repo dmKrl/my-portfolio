@@ -14,6 +14,7 @@ html[data-theme='dark'] {
     --Accent-Blue-light: #367bff;
     --Accent-Linear-stroke: #367bff;
     --Main-100: #ffffff;
+    --Main-90: #0f0f0fdf;
     --Main-50: rgba(255, 255, 255, 0.5);
     --Main-20: rgba(255, 255, 255, 0.2);
     --Main-Blue-Cards: #d9e5fc00;
@@ -50,6 +51,7 @@ html[data-theme='light'] {
     --Accent-Blue-light: #0057ff;
     --Accent-Linear-stroke: #0057ff;
     --Main-100: #0f0f0f;
+    --Main-90: #ffffffdf;
     --Main-50: rgba(255, 255, 255, 0);
     --Main-20: rgba(0, 0, 0, 0.2);
     --Main-Blue-Cards: #d9e5fc;

@@ -1,0 +1,32 @@
+import {
+    selectIsOpenNavMenu,
+    setIsOpenNavMenu,
+} from '../../redux/navMenuSlice/navMenuSlice';
+import s from '../Header/Header.module.css';
+import { useDispatch, useSelector } from 'react-redux';
+
+const BurgerMenu = () => {
+    const dispatch = useDispatch();
+    const isOpen = useSelector(selectIsOpenNavMenu);
+    const toggleMenu = () => {
+        dispatch(setIsOpenNavMenu());
+    };
+    console.log(isOpen);
+    return (
+        <>
+            <div className={s.burgerMenu} onClick={() => toggleMenu()}>
+                <div
+                    className={`${s.burgerMenuLine} ${isOpen && s.open}`}
+                ></div>
+                <div
+                    className={`${s.burgerMenuLine} ${isOpen && s.open}`}
+                ></div>
+                <div
+                    className={`${s.burgerMenuLine} ${isOpen && s.open}`}
+                ></div>
+            </div>
+        </>
+    );
+};
+
+export default BurgerMenu;

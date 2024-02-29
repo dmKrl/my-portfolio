@@ -6,7 +6,6 @@ import ProjectCards from '../ProjectCards/ProjectCards';
 
 const Info = () => {
     const { theme } = useSelector(selectThemeStore);
-    console.log(theme);
     return (
         <div
             className={`${s.info} ${
