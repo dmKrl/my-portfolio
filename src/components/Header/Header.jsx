@@ -1,18 +1,21 @@
 import { Link, useLocation } from 'react-router-dom';
 import s from './Header.module.css';
-import { useTheme } from '../../hooks/use-theme';
+import { useTheme } from '../../hooks/useTheme';
 import { Link as LinkScroll } from 'react-scroll';
 import imgPath from '../../../config';
 
 const Header = () => {
     const location = useLocation();
     const { theme, setTheme } = useTheme();
+
     const handleLightThemeClick = () => {
         setTheme('light');
     };
+
     const handleDarkThemeClick = () => {
         setTheme('dark');
     };
+
     return (
         <header
             className={`${s.header} ${

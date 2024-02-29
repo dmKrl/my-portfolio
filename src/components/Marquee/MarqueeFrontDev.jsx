@@ -15,13 +15,13 @@ export default function MarqueeFrontDev() {
             }}
         >
             <Marquee>
-                FRONTEND * DEVELOPER * FRONTEND * DEVELOPER * FRONTEND *
-                DEVELOPER * FRONTEND * DEVELOPER * FRONTEND * DEVELOPER *
-                FRONTEND * DEVELOPER * FRONTEND * DEVELOPER * FRONTEND *
-                DEVELOPER * FRONTEND * DEVELOPER * FRONTEND * DEVELOPER *
-                FRONTEND * DEVELOPER * FRONTEND * DEVELOPER * FRONTEND *
-                DEVELOPER * FRONTEND * DEVELOPER * FRONTEND * DEVELOPER *
-                FRONTEND * DEVELOPER
+                FRONTEND · DEVELOPER · FRONTEND · DEVELOPER · FRONTEND ·
+                DEVELOPER · FRONTEND · DEVELOPER · FRONTEND · DEVELOPER ·
+                FRONTEND · DEVELOPER · FRONTEND · DEVELOPER · FRONTEND ·
+                DEVELOPER · FRONTEND · DEVELOPER · FRONTEND · DEVELOPER ·
+                FRONTEND · DEVELOPER · FRONTEND · DEVELOPER · FRONTEND ·
+                DEVELOPER · FRONTEND · DEVELOPER · FRONTEND · DEVELOPER ·
+                FRONTEND · DEVELOPER
             </Marquee>
         </div>
     );

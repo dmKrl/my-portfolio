@@ -23,3 +23,15 @@
         padding: 80px 20px 100px 20px;
     }
 }
+@media (max-width: 768px) {
+    .info {
+        height: 1400px;
+        padding-bottom: 0px;
+    }
+    .infoContainer {
+        padding: 80px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -85,3 +85,8 @@
         padding: 77px 20px;
     }
 }
+@media (max-width: 768px) {
+    .projectWrapper {
+        padding: 77px 20px;
+    }
+}

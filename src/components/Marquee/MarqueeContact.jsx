@@ -15,10 +15,10 @@ export default function MarqueeContact() {
             }}
         >
             <Marquee>
-                CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT *
-                CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT *
-                CONTACT * CONTACT * CONTACT * CONTACT * CONTACT * CONTACT *
-                CONTACT * CONTACT * CONTACT * CONTACT *
+                CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT ·
+                CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT ·
+                CONTACT · CONTACT · CONTACT · CONTACT · CONTACT · CONTACT ·
+                CONTACT · CONTACT · CONTACT · CONTACT ·
             </Marquee>
         </div>
     );

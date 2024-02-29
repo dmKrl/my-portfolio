@@ -13,7 +13,7 @@ const ProductSlider = () => {
         slidesToShow: 2,
         centerMode: true,
         centerPadding: '100px',
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         focusOnSelect: true,
         responsive: [
             {

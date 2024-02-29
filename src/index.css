@@ -95,4 +95,7 @@ html[data-theme='light'] {
     .slick-list {
         padding: 0px 160px 50px !important;
     }
+    .slick-track {
+        width: 9000px !important;
+    }
 }
