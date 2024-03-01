@@ -41,19 +41,17 @@ const Welcome = () => {
                     offset={50}
                     duration={500}
                 >
-                    {theme === 'dark' ? (
-                        <svg style={{ width: '48px', height: '48px' }}>
+                    <svg style={{ width: '48px', height: '48px' }}>
+                        {theme === 'dark' ? (
                             <use
                                 xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#scroll-black`}
                             />
-                        </svg>
-                    ) : (
-                        <svg style={{ width: '48px', height: '48px' }}>
+                        ) : (
                             <use
                                 xlinkHref={`${imgPath.imagePath}/image/icon/sprite.svg#scroll-white`}
                             />
-                        </svg>
-                    )}
+                        )}
+                    </svg>
                 </Link>
             </div>
         </div>

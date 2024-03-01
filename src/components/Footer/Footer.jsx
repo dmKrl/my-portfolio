@@ -45,7 +45,7 @@ const Footer = () => {
                                         ? `${imgPath.imagePath}/image/icon/scroll-black-up.svg`
                                         : `${imgPath.imagePath}/image/icon/scroll-light-up.svg`
                                 }`}
-                                alt=""
+                                alt="scroll-for-down"
                             />
                         </Link>
                     </div>
