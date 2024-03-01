@@ -11,7 +11,10 @@ const ProjectCardItem = ({ projectInfo }) => {
     return (
         <div className={s.projectCardsItem}>
             <div className={s.projectCardsImgBox}>
-                <img src={projectInfo.image} alt="" />
+                <img
+                    src={projectInfo.image}
+                    alt={`image-project-${projectInfo.nameProject}`}
+                />
             </div>
             <div className={s.projectCardsBottomBox}>
                 <h3 className={s.projectCardsBottomHeading}>

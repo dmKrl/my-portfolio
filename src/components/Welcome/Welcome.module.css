@@ -82,9 +82,12 @@
         font-size: 56px;
     }
     .mainBackImg {
-        bottom: -70px;
-        width: 280px;
-        height: 350.909px;
+        position: absolute;
+        left: -50px;
+        bottom: 25px;
+        width: 333px;
+        height: 324px;
+        transform: rotate(-51deg);
     }
     .welcomeDownText {
         width: 300px;
@@ -92,6 +95,9 @@
         font-style: normal;
         font-weight: 500;
         line-height: 120%;
+    }
+    .welcomeUp {
+        margin-top: 192px;
     }
     .welcomeDown {
         flex-direction: column;
