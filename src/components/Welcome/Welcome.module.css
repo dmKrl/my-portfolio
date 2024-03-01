@@ -4,9 +4,9 @@
 .mainBackImg {
     position: absolute;
     bottom: 0px;
-    width: 585.761px;
-    height: 590.909px;
-    transform: rotate(-1.973deg);
+    width: 585px;
+    height: 590px;
+    transform: rotate(-2deg);
 }
 .welcomeBox {
     position: relative;
@@ -70,8 +70,8 @@
     }
     .mainBackImg {
         bottom: 30px;
-        width: 365.761px;
-        height: 350.909px;
+        width: 365px;
+        height: 350px;
     }
 }
 @media (max-width: 768px) {

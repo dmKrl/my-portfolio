@@ -13,7 +13,10 @@ const BurgerMenu = () => {
     };
     return (
         <>
-            <div className={s.burgerMenu} onClick={() => toggleMenu()}>
+            <div
+                className={`${s.burgerMenu} ${isOpen && s.burgerMenuFixed}`}
+                onClick={() => toggleMenu()}
+            >
                 <div
                     className={`${s.burgerMenuLine} ${isOpen && s.open}`}
                 ></div>

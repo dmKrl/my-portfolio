@@ -184,4 +184,14 @@
         width: 75px;
         height: 24px;
     }
+    .burgerMenuFixed {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+    .headerLogoFixed {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
 }

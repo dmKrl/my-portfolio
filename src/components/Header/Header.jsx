@@ -30,7 +30,9 @@ const Header = () => {
             name="header"
         >
             <div className={s.headerWrapper}>
-                <div className={s.headerLogo}>
+                <div
+                    className={`${s.headerLogo} ${isOpen && s.headerLogoFixed}`}
+                >
                     <Link to="/">
                         <svg style={{ width: '97px', height: '31px' }}>
                             {theme === 'dark' ? (
