@@ -8,7 +8,7 @@ const FooterMessager = () => {
     const { theme } = useSelector(selectThemeStore);
     return (
         <>
-            <div className={s.footerDownCenterMessage} name="contact">
+            <div className={s.footerDownCenterMessage} name="contacts">
                 <Link to="mailto:dm_krl@mail.ru" target="_blank">
                     <img
                         src={

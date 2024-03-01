@@ -5,9 +5,23 @@ import s from '../Header/Header.module.css';
 import { useDispatch } from 'react-redux';
 import { setIsOpenNavMenu } from '../../redux/navMenuSlice/navMenuSlice';
 import ChangeTheme from '../ChangeTheme/ChangeTheme';
+import { setPathLink } from '../../redux/pathLinkSlice/pathLinkSlice';
 
-const NavBar = ({ theme, handleDarkThemeClick, handleLightThemeClick }) => {
+const NavBar = ({
+    theme,
+    handleDarkThemeClick,
+    handleLightThemeClick,
+    location,
+}) => {
     const dispatch = useDispatch();
+
+    const changePathLink = (pathlink) => {
+        dispatch(setPathLink(pathlink));
+    };
+
+    const changeIsOpen = () => {
+        dispatch(setIsOpenNavMenu());
+    };
 
     const toggleIsOpen = () => {
         dispatch(setIsOpenNavMenu());
@@ -15,16 +29,45 @@ const NavBar = ({ theme, handleDarkThemeClick, handleLightThemeClick }) => {
     return (
         <>
             <nav className={s.headerNavBar} onClick={toggleIsOpen}>
-                <Link to="/">Home</Link>
-                <LinkScroll to="skills" smooth={true}>
-                    Tools
-                </LinkScroll>
-                <LinkScroll to="project" smooth={true}>
-                    Projects
-                </LinkScroll>
-                <LinkScroll to="contact" smooth={true}>
-                    Contacts
-                </LinkScroll>
+                {location.pathname !== '/' ? (
+                    <>
+                        <Link to="/">Home</Link>
+                        <Link to="/" onClick={() => changePathLink('skills')}>
+                            Tools
+                        </Link>
+                        <Link to="/" onClick={() => changePathLink('projects')}>
+                            Projects
+                        </Link>
+                        <Link to="/" onClick={() => changePathLink('contacts')}>
+                            Contacts
+                        </Link>
+                    </>
+                ) : (
+                    <>
+                        <Link to="/">Home</Link>
+                        <LinkScroll
+                            to="skills"
+                            smooth={true}
+                            onClick={changeIsOpen}
+                        >
+                            Tools
+                        </LinkScroll>
+                        <LinkScroll
+                            to="projects"
+                            smooth={true}
+                            onClick={changeIsOpen}
+                        >
+                            Projects
+                        </LinkScroll>
+                        <LinkScroll
+                            to="contacts"
+                            smooth={true}
+                            onClick={changeIsOpen}
+                        >
+                            Contacts
+                        </LinkScroll>
+                    </>
+                )}
             </nav>
             <div className={s.headerOptions}>
                 <div>

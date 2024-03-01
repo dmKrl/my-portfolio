@@ -60,6 +60,7 @@ const Header = () => {
                     {isOpen && isScreenMob && (
                         <div className={s.navBlock}>
                             <NavBar
+                                location={location}
                                 theme={theme}
                                 handleDarkThemeClick={handleDarkThemeClick}
                                 handleLightThemeClick={handleLightThemeClick}

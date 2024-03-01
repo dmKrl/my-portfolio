@@ -6,9 +6,8 @@ import s from './ProjectCards.module.css';
 
 const ProjectCards = () => {
     const { isScreenMob } = useResize();
-    console.log(isScreenMob);
     return (
-        <div className={s.projectCards} name="project">
+        <div className={s.projectCards} name="projects">
             <div className={s.projectCardsUp}>
                 <h1 className={s.projectCardsHeading}>Portfolio</h1>
             </div>
