@@ -52,6 +52,7 @@ const Header = () => {
                         <BurgerMenu />
                     ) : (
                         <NavBar
+                            location={location}
                             theme={theme}
                             handleDarkThemeClick={handleDarkThemeClick}
                             handleLightThemeClick={handleLightThemeClick}

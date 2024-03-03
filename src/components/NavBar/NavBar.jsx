@@ -5,7 +5,6 @@ import s from '../Header/Header.module.css';
 import { useDispatch } from 'react-redux';
 import { setIsOpenNavMenu } from '../../redux/navMenuSlice/navMenuSlice';
 import ChangeTheme from '../ChangeTheme/ChangeTheme';
-import { setPathLink } from '../../redux/pathLinkSlice/pathLinkSlice';
 
 const NavBar = ({
     theme,
@@ -14,10 +13,6 @@ const NavBar = ({
     location,
 }) => {
     const dispatch = useDispatch();
-
-    const changePathLink = (pathlink) => {
-        dispatch(setPathLink(pathlink));
-    };
 
     const changeIsOpen = () => {
         dispatch(setIsOpenNavMenu());
@@ -32,15 +27,9 @@ const NavBar = ({
                 {location.pathname !== '/' ? (
                     <>
                         <Link to="/">Home</Link>
-                        <Link to="/" onClick={() => changePathLink('skills')}>
-                            Tools
-                        </Link>
-                        <Link to="/" onClick={() => changePathLink('projects')}>
-                            Projects
-                        </Link>
-                        <Link to="/" onClick={() => changePathLink('contacts')}>
-                            Contacts
-                        </Link>
+                        <Link to="/">Tools</Link>
+                        <Link to="/">Projects</Link>
+                        <Link to="/">Contacts</Link>
                     </>
                 ) : (
                     <>

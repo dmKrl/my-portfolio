@@ -1,8 +1,19 @@
-# React + Vite
+# Сайт-визитка портфолио проектов"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Данный веб-сайт разработан в целях группирования информации обо мне, как о специалисте
 
-Currently, two official plugins are available:
+## Описание работы проекта
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Данный веб-сайт адаптивный, имеет возможность смены цвета темы(подстраивается под тему системы). В сайте также присутствует страница с инофрмацией для каждого проекта, который находится в списке разработанных проектов.
+
+## Технический стек:
+
+React
+Redux
+Vite
+React Router
+CSS Modules
+
+## Иллюстрация проекта:
+
+Просмотреть портфолио можно по ссылке: https://dmkrl.github.io/my-portfolio/ 
