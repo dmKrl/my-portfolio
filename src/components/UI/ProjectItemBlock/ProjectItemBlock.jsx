@@ -25,7 +25,9 @@ const ProjectItemBlock = ({ project }) => {
                     <div className={s.projectSkills}>
                         {project.Tools.map((tool) => {
                             return (
-                                <SkillsItem key={project.id + 1}>{tool}</SkillsItem>
+                                <SkillsItem key={project.id + 1}>
+                                    {tool}
+                                </SkillsItem>
                             );
                         })}
                     </div>
@@ -34,7 +36,11 @@ const ProjectItemBlock = ({ project }) => {
                     <Link to={project.linkToCode} target="_blank">
                         View the code 🠒
                     </Link>
-                    <Link to="/project">View the project 🠒</Link>
+                    {project.linkToSite && (
+                        <Link to={project.linkToSite} target="_blank">
+                            View the project 🠒
+                        </Link>
+                    )}
                 </div>
             </div>
             <div className={s.descriptionRight}>

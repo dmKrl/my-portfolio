@@ -38,7 +38,7 @@ const FooterMessager = () => {
                                 ? `${imgPath.imagePath}/image/icon/whatsapp.svg`
                                 : `${imgPath.imagePath}/image/icon/whatsapp-light.svg`
                         }
-                        style={{ width: '32px', height: '32px' }}
+                        style={{ width: '29px', height: '29px' }}
                         alt="messenger-telegram"
                     />
                 </Link>

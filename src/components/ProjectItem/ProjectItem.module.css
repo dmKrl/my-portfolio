@@ -116,7 +116,7 @@
 }
 @media (max-width: 768px) {
     .projectWrapper {
-        padding: 40px 20px;
+        padding: 20px 20px;
     }
     .descriptionRight img {
         width: 320px;
@@ -131,7 +131,7 @@
     }
     .projectNameProject {
         font-size: 42px;
-        padding: 10px 0px 15px;
+        padding: 10px 0px;
     }
     .projectText {
         max-width: 300px;

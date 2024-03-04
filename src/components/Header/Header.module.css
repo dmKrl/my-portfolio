@@ -34,6 +34,7 @@
     font-weight: 400;
     line-height: 120%;
 }
+
 .headerOptions {
     display: flex;
     gap: 15px;
@@ -130,12 +131,23 @@
     height: 100vh;
     background-color: var(--header-theme);
     background-image: var(--header-backgroundImg);
-    z-index: 99;
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    z-index: 99;
+}
+.navBlockMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 107px;
+}
+.navBlockContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
 }
 
 .burgerMenuLine:nth-of-type(1) {
@@ -178,7 +190,8 @@
         gap: 15px;
     }
     .headerNavBar a {
-        font-size: 26px;
+        font-size: 32px;
+        font-weight: 500;
     }
     .headerLogo {
         width: 75px;
@@ -194,4 +207,14 @@
         top: 10px;
         left: 10px;
     }
+    .navBlockMain {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.linkHome {
+    color: var(--Text-100) !important;
 }

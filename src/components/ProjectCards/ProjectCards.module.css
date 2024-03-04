@@ -155,12 +155,12 @@
         margin-bottom: 2px;
     }
     .projectCardsBottomBox a {
+        opacity: 1 !important;
         margin-bottom: 10px;
         font-size: 12px;
     }
     .projectCardsBottomBox p {
-        bottom: 10px;
-        font-size: 12px;
+        opacity: 0 !important;
     }
     .projectCardsBottomBox {
         margin-bottom: 0px;

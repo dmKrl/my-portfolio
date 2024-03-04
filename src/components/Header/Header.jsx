@@ -7,6 +7,7 @@ import BurgerMenu from './../BurgerMenu/BurgerMenu';
 import { selectIsOpenNavMenu } from '../../redux/navMenuSlice/navMenuSlice';
 import { useSelector } from 'react-redux';
 import NavBar from '../NavBar/NavBar';
+import FooterMessager from '../FooterMessagers/FooterMessager';
 
 const Header = () => {
     const location = useLocation();
@@ -59,14 +60,20 @@ const Header = () => {
                         />
                     )}
                     {isOpen && isScreenMob && (
-                        <div className={s.navBlock}>
-                            <NavBar
-                                location={location}
-                                theme={theme}
-                                handleDarkThemeClick={handleDarkThemeClick}
-                                handleLightThemeClick={handleLightThemeClick}
-                            />
-                        </div>
+                        <>
+                            <div className={s.navBlock}>
+                                <NavBar
+                                    location={location}
+                                    theme={theme}
+                                    isScreenMob={isScreenMob}
+                                    handleDarkThemeClick={handleDarkThemeClick}
+                                    handleLightThemeClick={
+                                        handleLightThemeClick
+                                    }
+                                />
+                            </div>
+                            {isScreenMob && <FooterMessager />}
+                        </>
                     )}
                 </div>
             </div>
