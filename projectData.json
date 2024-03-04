@@ -7,7 +7,7 @@
         "Tools": ["React", "Redux", "RTK Query", "Styled Components"],
         "image": "/my-portfolio/image/music-app.jpg",
         "imageLaptop": "/my-portfolio/image/music-app-laptop.png",
-        "linkToCode": "https://github.com/dmKrl/app-music",
+        "linkToCode": "https://github.com/dmKrl/music-app",
         "linkToSite": "https://dmkrl.github.io/music-app/"
     },
     {
@@ -17,7 +17,8 @@
         "descriptionProject": "Application for viewing and publishing products and services",
         "Tools": ["React", "Redux", "RTK Query", "CSS Modules", "Docker"],
         "image": "/my-portfolio/image/avito.jpg",
-        "imageLaptop": "/my-portfolio/image/avito-laptop.png"
+        "imageLaptop": "/my-portfolio/image/avito-laptop.png",
+        "linkToCode": "https://github.com/dmKrl/sky-avito"
     },
     {
         "id": 3,

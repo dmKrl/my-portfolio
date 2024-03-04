@@ -45,10 +45,18 @@
     },
     {
         "id": "12",
-        "name": "Nodejs"
+        "name": "Webpack"
     },
     {
         "id": "13",
         "name": "Docker"
+    },
+    {
+        "id": "13",
+        "name": "Nodejs"
+    },
+    {
+        "id": "13",
+        "name": "Jest"
     }
 ]
