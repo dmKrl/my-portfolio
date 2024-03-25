@@ -214,6 +214,19 @@
         align-items: center;
         gap: 20px;
     }
+    .changeBackColor {
+        height: 29px;
+    }
+    .changeButtonLight {
+        transform: translateX(-50%);
+        width: 30px;
+        height: 28px;
+    }
+    .changeButtonDark {
+        transform: translateX(50%);
+        width: 30px;
+        height: 28px;
+    }
 }
 .linkHome {
     color: var(--Text-100) !important;

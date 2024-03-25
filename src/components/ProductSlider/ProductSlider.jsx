@@ -13,21 +13,25 @@ const ProductSlider = () => {
         slidesToShow: 2,
         centerMode: true,
         centerPadding: '100px',
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         focusOnSelect: true,
         responsive: [
             {
                 breakpoint: 1540,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 0,
+                    infinite: true,
+                    slidesToShow: 2,
+                    centerPadding: '100px',
+                    speed: 500,
+                    slidesToScroll: 1,
                     focusOnSelect: false,
                 },
             },
             {
                 breakpoint: 1280,
                 settings: {
-                    slidesToShow: 1,
+                    infinite: true,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     focusOnSelect: false,
                 },
