@@ -21,8 +21,9 @@ const ProductSlider = () => {
                 settings: {
                     infinite: true,
                     slidesToShow: 2,
+                    centerMode: false,
                     centerPadding: '100px',
-                    speed: 500,
+                    speed: 400,
                     slidesToScroll: 1,
                     focusOnSelect: false,
                 },
@@ -33,6 +34,7 @@ const ProductSlider = () => {
                     infinite: true,
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    centerMode: false,
                     focusOnSelect: false,
                 },
             },

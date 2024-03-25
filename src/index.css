@@ -84,11 +84,17 @@ html[data-theme='light'] {
 }
 
 .slick-slider {
+    max-height: 488px;
     position: static;
+}
+.slick-track {
+    max-height: 438px;
+    display: flex;
 }
 @media (max-width: 1540px) {
     .slick-slide {
         min-width: 530px;
+        max-width: 600px;
     }
     .slick-list {
         padding: 0px 160px 50px !important;

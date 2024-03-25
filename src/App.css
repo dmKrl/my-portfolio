@@ -57,6 +57,7 @@ ul li {
 }
 
 @media (max-width: 1600px) {
+
     .slick-prev {
         left: 1060px !important;
     }
