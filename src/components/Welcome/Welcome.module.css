@@ -7,6 +7,7 @@
     width: 585px;
     height: 590px;
     transform: rotate(-2deg);
+    left: -20px;
 }
 .welcomeBox {
     position: relative;
@@ -71,6 +72,7 @@
     .mainBackImg {
         bottom: 30px;
         width: 365px;
+        left: -50px;
         height: 350px;
     }
 }

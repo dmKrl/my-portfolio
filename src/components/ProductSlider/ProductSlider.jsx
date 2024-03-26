@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import ProjectCardItem from '../UI/ProjectCardItem/ProjectCardItem';
 import projectData from '../../../projectData.json';
 import '../../App.css';
+import { v4 as uuidv4 } from 'uuid';
 
 const ProductSlider = () => {
     console.log(window.innerWidth);
@@ -32,6 +33,7 @@ const ProductSlider = () => {
                 breakpoint: 1280,
                 settings: {
                     infinite: true,
+                    centerPadding: '100px',
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     centerMode: false,
@@ -49,10 +51,7 @@ const ProductSlider = () => {
         <Slider {...settings}>
             {projectData.map((projectInfo) => {
                 return (
-                    <ProjectCardItem
-                        projectInfo={projectInfo}
-                        key={projectInfo.id}
-                    />
+                    <ProjectCardItem projectInfo={projectInfo} key={uuidv4()} />
                 );
             })}
         </Slider>

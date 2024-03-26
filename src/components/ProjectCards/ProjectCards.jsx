@@ -3,6 +3,7 @@ import ProductSlider from '../ProductSlider/ProductSlider';
 import ProjectCardItem from '../UI/ProjectCardItem/ProjectCardItem';
 import projectData from '../../../projectData.json';
 import s from './ProjectCards.module.css';
+import { v4 as uuidv4 } from 'uuid';
 
 const ProjectCards = () => {
     const { isScreenMob } = useResize();
@@ -17,7 +18,7 @@ const ProjectCards = () => {
                         return (
                             <ProjectCardItem
                                 projectInfo={projectInfo}
-                                key={projectInfo.id}
+                                key={uuidv4()}
                             />
                         );
                     })

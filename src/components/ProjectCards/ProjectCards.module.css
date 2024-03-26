@@ -61,6 +61,11 @@
     flex-direction: column;
     padding-left: 20px;
 }
+.projectCardsBottomBox {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
 
 .projectCardsBottomHeading {
     color: var(--Text-100);

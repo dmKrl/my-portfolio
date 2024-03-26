@@ -87,6 +87,10 @@ html[data-theme='light'] {
     max-height: 488px;
     position: static;
 }
+/* .slick-slide {
+    max-width: 508px;
+    max-width: 600px;
+} */
 .slick-track {
     max-height: 438px;
     display: flex;

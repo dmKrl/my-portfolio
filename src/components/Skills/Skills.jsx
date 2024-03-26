@@ -1,6 +1,7 @@
 import SkillsItem from '../UI/SkillsItem/SkillsItem';
 import s from './Skills.module.css';
 import skillsData from '../../../skillsData.json';
+import { v4 as uuidv4 } from 'uuid';
 
 const Skills = () => {
     return (
@@ -17,7 +18,7 @@ const Skills = () => {
                 <div className={s.skillsItems}>
                     {skillsData.map((skill) => {
                         return (
-                            <SkillsItem key={skill.id}>{skill.name}</SkillsItem>
+                            <SkillsItem key={uuidv4()}>{skill.name}</SkillsItem>
                         );
                     })}
                 </div>

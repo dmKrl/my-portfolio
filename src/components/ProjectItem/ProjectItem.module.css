@@ -62,6 +62,10 @@
     flex-direction: column;
     gap: 5px;
 }
+.projectNav img {
+    width: 11px;
+    height: 13px;
+}
 .projectNav a {
     overflow: hidden;
     color: var(--Text-100);
@@ -72,6 +76,9 @@
     font-weight: 500;
     line-height: 120%;
     transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .projectNav a:hover {
     color: var(--Text-50);
