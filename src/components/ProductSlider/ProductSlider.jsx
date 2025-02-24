@@ -3,7 +3,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ProjectCardItem from '../UI/ProjectCardItem/ProjectCardItem';
 import projectData from '../../../projectData.json';
-import '../../App.css';
+import '../../app/styles/App.css';
 import { v4 as uuidv4 } from 'uuid';
 
 const ProductSlider = () => {
